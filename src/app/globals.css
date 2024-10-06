@@ -27,7 +27,7 @@ body {
 }
 
 a {
-    color: #0a0a0a;
+    color: var(--foreground);
     font-weight: 600;
 }
 
