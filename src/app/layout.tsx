@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Jan Plate',
     description: 'Jan Plate’s homepage on GitHub',
     icons: {
-        icon: "/favicon.svg",
+        icon: '/favicon.svg',
     },
 };
 

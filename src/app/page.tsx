@@ -21,7 +21,8 @@ export default function Home() {
                     I&rsquo;m an analytic philosopher, specializing in
                     metaphysics and philosophical logic. I live in Lugano, where
                     I&rsquo;ve been a postdoc at the{' '}
-                    <a href='https://www.usi.ch/en'
+                    <a
+                        href='https://www.usi.ch/en'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
