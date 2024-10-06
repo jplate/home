@@ -21,7 +21,10 @@ export default function Home() {
                     I&rsquo;m an analytic philosopher, specializing in
                     metaphysics and philosophical logic. I live in Lugano, where
                     I&rsquo;ve been a postdoc at the{' '}
-                    <a href='https://www.usi.ch/en'>
+                    <a href='https://www.usi.ch/en'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         University of Italian Switzerland
                     </a>{' '}
                     (USI) until September 2022.
@@ -37,7 +40,6 @@ export default function Home() {
                                 <a
                                     key='1'
                                     href='https://philpeople.org/profiles/jan-plate'
-                                    className='hover:underline'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
@@ -46,7 +48,6 @@ export default function Home() {
                                 <a
                                     key='2'
                                     href='https://github.com/jplate'
-                                    className='hover:underline'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
