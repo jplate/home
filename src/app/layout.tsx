@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     title: 'Jan Plate',
     description: 'Jan Plate’s homepage on GitHub',
     icons: {
-        icon: "/src/app/icon.svg"
-    }
+        icon: '/src/app/icon.svg',
+    },
 };
 
 export default function RootLayout({
