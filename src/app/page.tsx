@@ -14,11 +14,19 @@ export default function Home() {
                     style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
                     priority
                 />
-                <section id='intro' className='prose text-md max-w-md md:max-w-xl xl:max-w-3xl mt-3 mx-4 mb-9'>
-                    I&rsquo;m an analytic philosopher, specializing in metaphysics and philosophical logic. I live in Lugano, where I&rsquo;ve been a postdoc {' '}
-                    at the <a href='https://www.usi.ch/en'>University of Italian Switzerland</a> (USI) until September 2022.
+                <section
+                    id='intro'
+                    className='prose text-md max-w-md md:max-w-xl xl:max-w-3xl mt-3 mx-4 mb-9'
+                >
+                    I&rsquo;m an analytic philosopher, specializing in
+                    metaphysics and philosophical logic. I live in Lugano, where
+                    I&rsquo;ve been a postdoc at the{' '}
+                    <a href='https://www.usi.ch/en'>
+                        University of Italian Switzerland
+                    </a>{' '}
+                    (USI) until September 2022.
                 </section>
-                
+
                 <Footer
                     copyRightHolder='Jan Plate'
                     licenseInfo='The source code for this webpage is licensed under the MIT License.'
@@ -62,7 +70,7 @@ export default function Home() {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                     >
-                                      @jan_plate
+                                        @jan_plate
                                     </a>
                                 </>,
                             ],
@@ -70,6 +78,6 @@ export default function Home() {
                     ]}
                 />
             </main>
-      </div>
+        </div>
     );
 }
