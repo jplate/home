@@ -124,7 +124,6 @@ const reviews: BibItem[] = [
     },
 ];
 
-const misc: BibItem[] = [];
 
 interface PubListProps {
     pubs: BibItem[];
