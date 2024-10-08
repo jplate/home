@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import useScrollbarWidth from '../hooks/useScrollbarWidth';
 
 interface NavItem {
     href: string;
@@ -14,7 +15,7 @@ interface NavbarProps {
     items: NavItem[];
 }
 
-const NavItemComponent: React.FC<
+const NavItem: React.FC<
     NavItem & { isActive: boolean; onClick: () => void }
 > = ({ href, text, isActive, onClick }) => (
     <Link
@@ -29,11 +30,17 @@ const NavItemComponent: React.FC<
 const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
+    const sbWidth = useScrollbarWidth();
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className='bg-white border-b border-gray-200 mt-8'>
+        <nav
+            className='border-b border-gray-200 mt-8'
+            style={{
+                marginRight: `-${sbWidth}px`,
+            }}
+        >
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16 min-w-[90vw] md:min-w-[50vw]'>
                     <Link href='/' className='text-xl font-light text-gray-800'>
@@ -42,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
                     <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
                             {items.map((item, index) => (
-                                <NavItemComponent
+                                <NavItem
                                     key={index}
                                     {...item}
                                     isActive={pathname === item.href}
@@ -94,7 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                     {items.map((item, index) => (
-                        <NavItemComponent
+                        <NavItem
                             key={index}
                             {...item}
                             isActive={pathname === item.href}
@@ -112,10 +119,10 @@ const MyNavbar: React.FC = () => (
         brandName='Jan Plate'
         items={[
             { href: '/', text: 'Home' },
-            { href: '/research', text: 'Research' },
-            { href: '/publications', text: 'Publications' },
-            { href: '/teaching', text: 'Teaching' },
-            { href: '/web-dev', text: 'Web-Dev' },
+            { href: '/Research', text: 'Research' },
+            { href: '/Publications', text: 'Publications' },
+            { href: '/Teaching', text: 'Teaching' },
+            { href: '/WebDev', text: 'Web-Dev' },
         ]}
     />
 );
