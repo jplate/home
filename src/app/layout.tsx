@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Jan Plate’s homepage on GitHub',
     icons: {
         icon: './icon.svg',
+        apple: './apple_icon.png',
     },
 };
 
