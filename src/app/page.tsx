@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Section from './components/Section';
 import portrait from './images/20231014portrait.jpg';
 
-
 export default function Page() {
-    return (<ContentDiv>
+    return (
+        <ContentDiv>
             <Image
                 className='hidden md:block'
                 src={portrait}
@@ -14,12 +14,10 @@ export default function Page() {
                 style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
                 priority
             />
-            <Section
-                id='intro'
-            >
-                I&rsquo;m an analytic philosopher, specializing in
-                metaphysics and philosophical logic. I live in Lugano, where
-                I&rsquo;ve been a postdoc at the{' '}
+            <Section id='intro'>
+                I&rsquo;m an analytic philosopher, specializing in metaphysics
+                and philosophical logic. I live in Lugano, where I&rsquo;ve been
+                a postdoc at the{' '}
                 <a
                     href='https://www.usi.ch/en'
                     target='_blank'

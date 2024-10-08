@@ -44,7 +44,9 @@ a::after {
     opacity: 0;
     transform: scaleX(0);
     transform-origin: bottom left;
-    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transition:
+        transform 0.2s ease-out,
+        opacity 0.2s ease-out;
 }
 
 a:hover::after {

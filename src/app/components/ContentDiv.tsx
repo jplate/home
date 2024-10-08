@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import MyNavbar from './Navbar';
 import MyFooter from './Footer';
 
 interface ContentDivProps {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
 const ContentDiv = ({ children }: ContentDivProps) => {
@@ -16,6 +16,6 @@ const ContentDiv = ({ children }: ContentDivProps) => {
             <MyFooter />
         </div>
     );
-}
+};
 
 export default ContentDiv;

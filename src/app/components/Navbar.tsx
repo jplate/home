@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -14,7 +14,9 @@ interface NavbarProps {
     items: NavItem[];
 }
 
-const NavItemComponent: React.FC<NavItem & { isActive: boolean; onClick: () => void }> = ({ href, text, isActive, onClick }) => (
+const NavItemComponent: React.FC<
+    NavItem & { isActive: boolean; onClick: () => void }
+> = ({ href, text, isActive, onClick }) => (
     <Link
         href={href}
         className={`text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out ${isActive ? 'active-nav-item' : ''}`}
@@ -40,11 +42,11 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
                     <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
                             {items.map((item, index) => (
-                                <NavItemComponent 
-                                    key={index} 
-                                    {...item} 
+                                <NavItemComponent
+                                    key={index}
+                                    {...item}
                                     isActive={pathname === item.href}
-                                    onClick={() => {}} 
+                                    onClick={() => {}}
                                 />
                             ))}
                         </div>
@@ -92,11 +94,11 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                 <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                     {items.map((item, index) => (
-                        <NavItemComponent 
-                            key={index} 
-                            {...item} 
+                        <NavItemComponent
+                            key={index}
+                            {...item}
                             isActive={pathname === item.href}
-                            onClick={toggleMenu} 
+                            onClick={toggleMenu}
                         />
                     ))}
                 </div>
@@ -107,7 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
 
 const MyNavbar: React.FC = () => (
     <Navbar
-        brandName="Jan Plate"
+        brandName='Jan Plate'
         items={[
             { href: '/', text: 'Home' },
             { href: '/research', text: 'Research' },
