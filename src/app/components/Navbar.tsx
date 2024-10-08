@@ -119,9 +119,9 @@ const MyNavbar: React.FC = () => (
         brandName='Jan Plate'
         items={[
             { href: '/', text: 'Home' },
-            { href: '/Research11', text: 'Research' },
-            { href: '/Publications11', text: 'Publications' },
-            { href: '/Teaching11', text: 'Teaching' },
+            { href: '/Research', text: 'Research' },
+            { href: '/Publications', text: 'Publications' },
+            { href: '/Teaching', text: 'Teaching' },
             { href: '/WebDev', text: 'Web-Dev' },
         ]}
     />
