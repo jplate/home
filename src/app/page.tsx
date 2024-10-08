@@ -16,17 +16,17 @@ export default function Page() {
             />
             <Section id='intro'>
                 <p>
-                    I&rsquo;m an analytic philosopher, specializing in metaphysics
-                    and philosophical logic. I live in Lugano, where I&rsquo;ve been
-                    a postdoc at the{' '}
+                    I&rsquo;m an analytic philosopher, specializing in
+                    metaphysics and philosophical logic. I live in Lugano, where
+                    I&rsquo;ve been a postdoc at the{' '}
                     <a
                         href='https://www.usi.ch/en'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
                         University of Italian Switzerland
-                    </a>
-                    {' '}(USI) until September 2022.
+                    </a>{' '}
+                    (USI) until September 2022.
                 </p>
                 <p>
                     I&rsquo;ve obtained my PhD from{' '}
@@ -36,16 +36,16 @@ export default function Page() {
                         rel='noopener noreferrer'
                     >
                         Washington University in St.&nbsp;Louis
-                    </a> 
-                    {' '}with a{' '}
+                    </a>{' '}
+                    with a{' '}
                     <a
                         href='https://openscholarship.wustl.edu/etd/1017/'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        dissertation 
-                    </a>
-                    {' '}on the concept of essence.
+                        dissertation
+                    </a>{' '}
+                    on the concept of essence.
                 </p>
             </Section>
         </ContentDiv>
