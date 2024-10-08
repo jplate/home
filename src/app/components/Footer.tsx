@@ -19,15 +19,15 @@ const footerStyle = (sectionsLength: number) => `
 
 const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
-        <footer className='py-8 2xl:ml-[-150px]'>
+        <footer className='py-8'>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div container mx-auto grid gap-8 px-20 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
+            <div className='footer-div container mx-auto grid gap-8 px-20 mt-48 sm:mt-8 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
                 {sections.map((info, i) => (
                     <div
                         key={i}
                         className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'
                     >
-                        <h3 className='text-lg font-semibold my-1 2xl:mr-6'>
+                        <h3 className='text-base font-semibold my-1 2xl:mr-6'>
                             {info.header}
                         </h3>
                         <ul className='text-sm 2xl:inline 2xl:flex 2xl:space-x-6'>
@@ -40,7 +40,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
                     </div>
                 ))}
             </div>
-            <div className='container text-sm mx-auto mt-3 text-center border-t border-btnborder/60 pt-4'>
+            <div className='container text-xs mx-auto mt-3 text-center border-t border-btnborder/60 pt-4'>
                 <p className='px-8'>
                     © {new Date().getFullYear()} {copyRightHolder}.{' '}
                     {licenseInfo}
@@ -50,4 +50,55 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     );
 };
 
-export default Footer;
+const MyFooter: React.FC = () => (
+    <Footer
+        copyRightHolder='Jan Plate'
+        licenseInfo='The source code for this webpage is licensed under the MIT License.'
+        sections={[
+            {
+                header: 'Links',
+                contents: [
+                    <a
+                        key='1'
+                        href='https://philpeople.org/profiles/jan-plate'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        PhilPapers profile
+                    </a>,
+                    <a
+                        key='2'
+                        href='https://github.com/jplate'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        GitHub profile
+                    </a>,
+                ],
+            },
+            {
+                header: 'Contact',
+                contents: [
+                    <>
+                        <span>Email: </span>
+                        <a href='mailto:janplate@gmail.com'>
+                            jan.plate@gmail.com
+                        </a>
+                    </>,
+                    <>
+                        <span>&#120143;: </span> {/* Twitter */}
+                        <a
+                            href='https://x.com/jan_plate'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            @jan_plate
+                        </a>
+                    </>,
+                ],
+            },
+        ]}
+    />
+);
+
+export default MyFooter;

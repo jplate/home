@@ -12,8 +12,19 @@ const config: Config = {
                 background: 'var(--background)',
                 foreground: 'var(--foreground)',
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        a: {
+                            textDecoration: 'none',
+                        },
+                    },
+                },
+            },
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 };
 export default config;
