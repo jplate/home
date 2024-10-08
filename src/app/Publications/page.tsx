@@ -26,17 +26,17 @@ const PubList = ({ pubs }: PubListProps) => {
                 >
                     <div style={{ fontWeight: 'bold' }}>
                         {pub.link ? (
-                                <a
-                                    href={pub.link}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    style={{ fontWeight: 'bold' }}
-                                >
-                                    {pub.title}
-                                </a>
-                            ) : (
-                                pub.title
-                            )}
+                            <a
+                                href={pub.link}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                style={{ fontWeight: 'bold' }}
+                            >
+                                {pub.title}
+                            </a>
+                        ) : (
+                            pub.title
+                        )}
                     </div>
                     {pub.subtitle}
                     {pub.coauthors && (
@@ -64,9 +64,7 @@ const PubList = ({ pubs }: PubListProps) => {
                             )
                         </>
                     )}
-                    <div style={{ marginTop: '0.3em' }}>
-                        {pub.details}
-                    </div>
+                    <div style={{ marginTop: '0.3em' }}>{pub.details}</div>
                     <div style={{ marginTop: '0.3em' }}>{pub.year}</div>
                 </li>
             ))}
