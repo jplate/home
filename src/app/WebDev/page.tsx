@@ -20,7 +20,6 @@ export default function Page() {
                     for Java applets would soon be on the wane, and so I gave up
                     on the idea of maintaining a web site for my diagram editor.
                 </p>
-                <p>Years went by.</p>
                 <p>
                     Eventually, in the spring of 2024, I thought that it might
                     be interesting to reimplement the applet (or something like
