@@ -15,17 +15,38 @@ export default function Page() {
                 priority
             />
             <Section id='intro'>
-                I&rsquo;m an analytic philosopher, specializing in metaphysics
-                and philosophical logic. I live in Lugano, where I&rsquo;ve been
-                a postdoc at the{' '}
-                <a
-                    href='https://www.usi.ch/en'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    University of Italian Switzerland
-                </a>{' '}
-                (USI) until September 2022.
+                <p>
+                    I&rsquo;m an analytic philosopher, specializing in metaphysics
+                    and philosophical logic. I live in Lugano, where I&rsquo;ve been
+                    a postdoc at the{' '}
+                    <a
+                        href='https://www.usi.ch/en'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        University of Italian Switzerland
+                    </a>
+                    {' '}(USI) until September 2022.
+                </p>
+                <p>
+                    I&rsquo;ve obtained my PhD from{' '}
+                    <a
+                        href='https://washu.edu/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Washington University in St.&nbsp;Louis
+                    </a> 
+                    {' '}with a{' '}
+                    <a
+                        href='https://openscholarship.wustl.edu/etd/1017/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        dissertation 
+                    </a>
+                    {' '}on the concept of essence.
+                </p>
             </Section>
         </ContentDiv>
     );

@@ -10,7 +10,7 @@ export default function Page() {
                 available{' '}
                 <span style={{ whiteSpace: 'nowrap' }}>
                     <a
-                        href='https://sites.google.com/site/jplate01/teaching?authuser=0'
+                        href='https://sites.google.com/site/jplate01/teaching'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
