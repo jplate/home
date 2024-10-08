@@ -9,7 +9,7 @@ export default function Page() {
             <Image
                 className='hidden md:block'
                 src={portrait}
-                alt='Photo of author, 2023/10/14'
+                alt='Photo taken 2023/10/14'
                 width={180}
                 style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
                 priority
