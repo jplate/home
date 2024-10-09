@@ -20,7 +20,7 @@ const menuButtonClassName = clsx(
 );
 
 const menuItemClassName = clsx(
-    'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold',
+    'menu-item flex w-full items-center rounded-sm px-2 py-1 font-semibold',
     'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
 );
 
@@ -38,7 +38,7 @@ export const MenuItemList = ({
         >
             <MenuItems
                 anchor='bottom end'
-                className='menu min-w-40 origin-top-right rounded-md border border-btnborder bg-btnbg/20 p-1 text-sm text-btncolor'
+                className='menu z-50 min-w-40 origin-top-right rounded-md border border-btnborder bg-btnbg/20 p-1 text-sm text-btncolor'
             >
                 {children}
             </MenuItems>
@@ -97,7 +97,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
     return (
         <nav
             className={clsx(
-                'sticky top-0 z-40 border-b border-btnborder pt-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300',
+                'sticky top-0 z-40 border-b border-btnborder py-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300',
                 isVisible ? 'opacity-100' : 'opacity-0'
             )}
             style={{
