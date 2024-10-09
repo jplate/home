@@ -37,7 +37,7 @@ export const MenuItemList = ({
         >
             <MenuItems
                 anchor='bottom end'
-                className='menu z-50 min-w-40 [--anchor-gap:0.25rem] rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
+                className='menu z-50 min-w-40 origin-top-right [--anchor-gap:0.25rem] rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
             >
                 {children}
             </MenuItems>
