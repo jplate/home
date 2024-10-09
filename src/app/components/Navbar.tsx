@@ -14,7 +14,7 @@ import {
 import useScrollbarWidth from '../hooks/useScrollbarWidth';
 
 const menuButtonClassName = clsx(
-    'inline-flex items-center gap-2 rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
+    'inline-flex items-center rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
     'focus:outline-none data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
     'data-[focus]:outline-1 data-[focus]:outline-btnhoverbg transition-colors duration-300'
 );
@@ -97,7 +97,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
     return (
         <nav
             className={clsx(
-                'sticky top-0 z-40 border-b border-btnborder py-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300',
+                'sticky top-0 z-40 border-b border-btnborder min-w-[70vw] md:min-w-[50vw] px-5 lg:px-10 pt-2 transition-opacity duration-300',
                 isVisible ? 'opacity-100' : 'opacity-0'
             )}
             style={{
