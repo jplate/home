@@ -19,7 +19,7 @@ const menuButtonClassName = clsx(
 );
 
 const menuItemClassName = clsx(
-    'menu-item flex w-full items-center rounded-sm px-2 py-1 font-semibold',
+    'menu-item flex w-full items-center rounded-sm p-2 font-semibold', 
     'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
 );
 
@@ -37,7 +37,7 @@ export const MenuItemList = ({
         >
             <MenuItems
                 anchor='bottom end'
-                className='menu z-50 min-w-40 origin-top-right rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
+                className='menu z-50 min-w-40 [--anchor-gap:0.25rem] rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
             >
                 {children}
             </MenuItems>
@@ -123,7 +123,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                             )}
                         >
                             <div className='flex-1 text-left'>
-                                <svg
+                                <svg /* The 'hamburger' icon */
                                     xmlns='http://www.w3.org/2000/svg'
                                     fill='none'
                                     viewBox='0 0 24 24'
