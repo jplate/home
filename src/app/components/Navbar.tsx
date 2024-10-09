@@ -19,7 +19,7 @@ const menuButtonClassName = clsx(
 );
 
 const menuItemClassName = clsx(
-    'menu-item flex w-full items-center rounded-sm p-2 font-semibold', 
+    'menu-item flex w-full items-center rounded-sm p-2 font-semibold',
     'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
 );
 
