@@ -5,12 +5,14 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
+    --logocolor: #1f2937; /* gray-800 */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #0a0a0a;
         --foreground: #ededed;
+        --logocolor: #e5e7eb;
     }
 }
 
@@ -54,7 +56,34 @@ a:hover::after {
     transform: scaleX(1);
 }
 
+.active-nav-item {
+    opacity: 1;
+}
+
 .active-nav-item::after {
     opacity: 1;
     transform: scaleX(1);
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--foreground);
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+nav {
+    background: var(--background);
+}
+
+.logo {
+    color: var(--logocolor);
+    font-size: 1.25rem; 
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
 }

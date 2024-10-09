@@ -1,5 +1,4 @@
 import ContentDiv from '../components/ContentDiv';
-import styles from './Publications.module.css';
 import { BibItem, papers, reviews } from './pubs';
 
 interface PubListProps {
@@ -75,9 +74,9 @@ const PubList = ({ pubs }: PubListProps) => {
 export default function Page() {
     return (
         <ContentDiv>
-            <h2 className={styles.sectionHeader}>Journal articles</h2>
+            <h2>Journal articles</h2>
             <PubList pubs={papers} />
-            <h2 className={styles.sectionHeader}>Book reviews</h2>
+            <h2>Book reviews</h2>
             <PubList pubs={reviews} />
         </ContentDiv>
     );
