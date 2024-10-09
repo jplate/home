@@ -11,8 +11,8 @@
         "jsx": true // Allows JSX
     },
     "rules": {
-        "react/react-in-jsx-scope": "off" // Disable the rule that requires React to be in scope
-        //"react/prop-types": "off"
+        "react/react-in-jsx-scope": "off", // Disable the rule that requires React to be in scope
+        "@typescript-eslint/no-explicit-any": "off"
     },
     "settings": {
         "react": {
