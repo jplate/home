@@ -2,7 +2,7 @@
 
 import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import clsx from 'clsx/lite';
 import {
     Menu,
@@ -46,6 +46,17 @@ export const MenuItemList = ({
     );
 };
 
+export const debounce = <T extends (...args: any[]) => void>(
+    func: T,
+    delay: number
+) => {
+    let timeout: ReturnType<typeof setTimeout>;
+    return function (...args: Parameters<T>) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func(...args), delay);
+    };
+};
+
 interface NavItem {
     href: string;
     text: string;
@@ -73,6 +84,7 @@ interface NavbarProps {
 
 const Navbar = ({ brandName, items }: NavbarProps) => {
     const [isVisible, setIsVisible] = useState(true);
+    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -90,6 +102,22 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const handleResize = debounce(() => {
+            items.forEach((item) => {
+                router.prefetch(item.href);
+            });
+        }, 200);
+
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [router]);
 
     const pathname = usePathname();
     const sbWidth = useScrollbarWidth();
