@@ -80,9 +80,7 @@ const MyFooter: React.FC = () => (
                 header: 'Contact',
                 contents: [
                     <>
-                        <span
-                            className='whitespace-nowrap'
-                        >
+                        <span className='whitespace-nowrap'>
                             Email:{' '}
                             <a href='mailto:janplate@gmail.com'>
                                 jan.plate@gmail.com
@@ -90,9 +88,7 @@ const MyFooter: React.FC = () => (
                         </span>
                     </>,
                     <>
-                        <span
-                            className='whitespace-nowrap'
-                        >
+                        <span className='whitespace-nowrap'>
                             &#120143;: {/* Twitter */}
                             <a
                                 href='https://x.com/jan_plate'

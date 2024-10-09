@@ -12,13 +12,13 @@ const config: Config = {
                 background: 'var(--background)',
                 foreground: 'var(--foreground)',
 
-                btnbg: "rgba(var(--btnbg))",
-                btncolor: "rgba(var(--btncolor))",
-                btnborder: "rgba(var(--btnborder))",
-                btnhoverbg: "rgba(var(--btnhoverbg))",
-                btnhovercolor: "rgba(var(--btnhovercolor))",
-                btnactivebg: "rgba(var(--btnactivebg))",
-                btnactivecolor: "rgba(var(--btnactivecolor))",
+                btnbg: 'rgba(var(--btnbg))',
+                btncolor: 'rgba(var(--btncolor))',
+                btnborder: 'rgba(var(--btnborder))',
+                btnhoverbg: 'rgba(var(--btnhoverbg))',
+                btnhovercolor: 'rgba(var(--btnhovercolor))',
+                btnactivebg: 'rgba(var(--btnactivebg))',
+                btnactivecolor: 'rgba(var(--btnactivecolor))',
             },
             typography: {
                 DEFAULT: {
