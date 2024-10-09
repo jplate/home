@@ -6,14 +6,15 @@ import portrait from './images/20231014portrait.jpg';
 export default function Page() {
     return (
         <Content>
-            <Image
-                className='hidden md:block mb-9'
-                src={portrait}
-                alt='Photo taken 2023/10/14'
-                width={180}
-                style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
-                priority
-            />
+            <div className='hidden md:block mb-9 min-h-210'>
+                <Image
+                    src={portrait}
+                    alt='Photo taken 2023/10/14'
+                    width={180}
+                    style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
+                    priority
+                />
+            </div>
             <Section id='intro'>
                 <p>
                     I&rsquo;m an analytic philosopher, working mainly in
