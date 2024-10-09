@@ -16,9 +16,10 @@ import useScrollbarWidth from '../hooks/useScrollbarWidth';
 interface NavItem {
     href: string;
     text: string;
+    isActive?: boolean;
 }
 
-const NavItemComp: React.FC<NavItem & { isActive?: boolean }> = ({
+const NavItemComp: React.FC<NavItem> = ({
     href,
     text,
     isActive,
