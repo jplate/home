@@ -13,29 +13,16 @@ import {
 } from '@headlessui/react';
 import useScrollbarWidth from '../hooks/useScrollbarWidth';
 
-interface NavItem {
-    href: string;
-    text: string;
-    isActive?: boolean;
-}
-
-const NavItemComp = ({ href, text, isActive }: NavItem) => (
-    <Link
-        href={href}
-        className={`opacity-75 hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap ${isActive ? 'active-nav-item' : ''}`}
-    >
-        {text}
-    </Link>
-);
-
 const menuButtonClassName = clsx(
-    'inline-flex items-center gap-2 rounded-md bg-btnbg/85 text-sm text-btncolor',
+    'inline-flex items-center gap-2 rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
     'focus:outline-none data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
-    'data-[focus]:outline-1 data-[focus]:outline-btnhoverbg'
+    'data-[focus]:outline-1 data-[focus]:outline-btnhoverbg transition-colors duration-300'
 );
 
-const menuItemClassName =
-    'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold transition-colors data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor';
+const menuItemClassName = clsx(
+    'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold', 
+    'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
+);
 
 export const MenuItemList = ({
     children,
@@ -58,6 +45,24 @@ export const MenuItemList = ({
         </Transition>
     );
 };
+
+interface NavItem {
+    href: string;
+    text: string;
+    isActive?: boolean;
+}
+
+const NavItemComp = ({ href, text, isActive }: NavItem) => (
+    <Link
+        href={href}
+        className={clsx(
+            'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
+            isActive ? 'border-b-2 border-foreground' : 'opacity-75 hover:border-b hover:border-foreground lg:hover:border-none'
+        )}
+    >
+        {text}
+    </Link>
+);
 
 interface NavbarProps {
     brandName: string;
@@ -89,7 +94,10 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
 
     return (
         <nav
-            className={`sticky top-0 z-40 border-b border-btnborder mt-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={clsx(
+                'sticky top-0 z-40 border-b border-btnborder mt-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300',
+                isVisible ? 'opacity-100' : 'opacity-0'
+            )}
             style={{
                 marginRight: `-${sbWidth}px`,
             }}

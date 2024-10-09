@@ -16,7 +16,7 @@ export default function Page() {
             />
             <Section id='intro'>
                 <p>
-                    I&rsquo;m an analytic philosopher, specializing in
+                    I&rsquo;m an analytic philosopher, working mainly in
                     metaphysics and philosophical logic. I live in Lugano, where
                     I&rsquo;ve been a postdoc at the{' '}
                     <a

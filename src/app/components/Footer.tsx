@@ -27,7 +27,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
                         key={i}
                         className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'
                     >
-                        <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 2xl:mr-6 -translate-x-3 sm:translate-x-0'>
+                        <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 mr-6 -translate-x-3 sm:translate-x-0'>
                             {info.header}
                         </h3>
                         <ul className='text-sm 2xl:inline 2xl:flex 2xl:space-x-6'>
@@ -53,7 +53,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
 const MyFooter: React.FC = () => (
     <Footer
         copyRightHolder='Jan Plate'
-        licenseInfo='The source code for this webpage is licensed under the MIT License.'
+        licenseInfo='The source code for this website is licensed under the MIT License.'
         sections={[
             {
                 header: 'Links',

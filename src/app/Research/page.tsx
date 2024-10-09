@@ -9,7 +9,15 @@ export default function Page() {
                     My research generally focuses on the metaphysics of
                     intensional entities: properties, relations, states of
                     affairs, and other things of that ilk. In my most recent
-                    publication (&lsquo;Ordinal Type Theory&rsquo;), I develop
+                    publication (&lsquo;
+                    <a
+                        href='https://philarchive.org/rec/PLAOTT'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                            Ordinal Type Theory
+                    </a>
+                    &rsquo;), I develop
                     an alternative to the &lsquo;Simple Theory of Types&rsquo;
                     that is commonly used in the context of higher-order
                     metaphysics. My current work focuses on the task of

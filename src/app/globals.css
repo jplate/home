@@ -10,8 +10,8 @@
     --btnbg: 243, 244, 246; /* gray-100 */
     --btncolor: 3, 7, 18; /* gray-950 */
     --btnborder: 229, 231, 235; /* gray-200 */
-    --btnhoverbg: 3, 7, 18; /* gray-950 */
-    --btnhovercolor: 243, 244, 246; /* gray-100 */
+    --btnhoverbg: 63, 63, 70; /* zinc-700 */
+    --btnhovercolor: 255, 255, 255;
     --btnactivebg: 243, 244, 246; /* gray-100 */
     --btnactivecolor: 3, 7, 18; /* gray-950 */
 }
@@ -48,38 +48,67 @@ a:not(.menu-item):not(.logo) {
     color: var(--foreground);
     font-weight: 600;
     text-decoration: none;
-    position: relative;
-    white-space: nowrap;
 }
 
-a:not(.menu-item):not(.logo)::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--foreground);
-    opacity: 0;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition:
-        transform 0.2s ease-out,
-        opacity 0.2s ease-out;
+a:not(.menu-item):not(.logo):not(.nav-item):hover {
+    text-decoration: underline;
 }
 
-a:not(.menu-item):hover::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
+@media (min-width: 1024px) {
+    /* I'd like to use a 'fancy' hover effect that produces an animated line. Since this effect only really works if the link in 
+        question does not wrap around a line break, we're imposing a 'white-space: nowrap' directive. However, this policy is 
+        suboptimal for smaller screens, and so we reserve the effect for bigger ones. */
+    a:not(.menu-item):not(.logo) {
+        color: var(--foreground);
+        font-weight: 600;
+        text-decoration: none !important;
+        position: relative;
+        white-space: nowrap;
+    }
 
-.active-nav-item {
-    opacity: 1;
-}
+    a:not(.nav-item):not(.menu-item):not(.logo)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--foreground);
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+        transition:
+            transform 0.2s ease-out,
+            opacity 0.2s ease-out;
+    }
 
-.active-nav-item:not(.menu-item):not(.logo)::after {
-    opacity: 1;
-    transform: scaleX(1);
+    a:not(.nav-item):not(.menu-item):not(.logo):hover::after {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    /* For the nav-items, we have to add a translation effect that connects the hover effect with the more permanent border-effect.
+       (The latter is handled by a conditionally applied tailwind class in NavItemComp.) */
+    a.nav-item:not(.menu-item):not(.logo)::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--foreground);
+        opacity: 0;
+        transform: translateY(1px) scaleX(0);
+        transform-origin: bottom left;
+        transition:
+            transform 0.2s ease-out,
+            opacity 0.2s ease-out;
+    }
+
+    a.nav-item:not(.menu-item):not(.logo):hover::after {
+        opacity: 1;
+        transform: translateY(1px) scaleX(1);
+    }
 }
 
 h2 {
@@ -106,6 +135,6 @@ nav {
 }
 
 .menu {
-    -webkit-backdrop-filter: blur(15px); /* for Safari */
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    backdrop-filter: blur(10px);
 }
