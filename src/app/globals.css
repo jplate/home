@@ -32,6 +32,10 @@
     }
 }
 
+html {
+    overflow-y: scroll; /* Always show the vertical scrollbar (to prevent the navbar from shifting after a route change) */
+}
+
 body {
     color: var(--foreground);
     background: var(--background);

@@ -2,7 +2,7 @@
 
 import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import clsx from 'clsx/lite';
 import {
     Menu,
@@ -11,7 +11,6 @@ import {
     MenuItems,
     Transition,
 } from '@headlessui/react';
-import useScrollbarWidth from '../hooks/useScrollbarWidth';
 
 const menuButtonClassName = clsx(
     'inline-flex items-center rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
@@ -46,17 +45,6 @@ export const MenuItemList = ({
     );
 };
 
-export const debounce = <T extends (...args: any[]) => void>(
-    func: T,
-    delay: number
-) => {
-    let timeout: ReturnType<typeof setTimeout>;
-    return function (...args: Parameters<T>) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func(...args), delay);
-    };
-};
-
 interface NavItem {
     href: string;
     text: string;
@@ -84,7 +72,6 @@ interface NavbarProps {
 
 const Navbar = ({ brandName, items }: NavbarProps) => {
     const [isVisible, setIsVisible] = useState(true);
-    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -103,24 +90,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
         };
     }, []);
 
-    useEffect(() => {
-        const handleResize = debounce(() => {
-            items.forEach((item) => {
-                router.prefetch(item.href);
-            });
-        }, 200);
-
-        window.addEventListener('resize', handleResize);
-
-        handleResize();
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [router]);
-
     const pathname = usePathname();
-    const sbWidth = useScrollbarWidth();
 
     return (
         <nav
@@ -128,9 +98,6 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                 'sticky top-0 z-40 border-b border-btnborder min-w-[70vw] md:min-w-[50vw] px-5 lg:px-10 pt-2 transition-opacity duration-300',
                 isVisible ? 'opacity-100' : 'opacity-0'
             )}
-            style={{
-                marginRight: `-${sbWidth}px`,
-            }}
         >
             <div className='flex justify-between'>
                 <Link href='/' className='logo mr-5'>
