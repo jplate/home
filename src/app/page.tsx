@@ -6,7 +6,9 @@ import portrait from './images/20231014portrait.jpg';
 export default function Page() {
     return (
         <Content>
-            <div className='hidden md:block mb-9 min-h-210'>
+            <div className='hidden md:block mb-9 min-h-[210px]'> 
+                {/* we pre-specify the needed height so as to trigger the vertical scrollbar immediately, rather than only when the 
+                    picture loads. */}
                 <Image
                     src={portrait}
                     alt='Photo taken 2023/10/14'
