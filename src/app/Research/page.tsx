@@ -15,13 +15,13 @@ export default function Page() {
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                            Ordinal Type Theory
+                        Ordinal Type Theory
                     </a>
-                    &rsquo;), I develop
-                    an alternative to the &lsquo;Simple Theory of Types&rsquo;
-                    that is commonly used in the context of higher-order
-                    metaphysics. My current work focuses on the task of
-                    expanding this theory into a more full-fledged ontology.
+                    &rsquo;), I develop an alternative to the &lsquo;Simple
+                    Theory of Types&rsquo; that is commonly used in the context
+                    of higher-order metaphysics. My current work focuses on the
+                    task of expanding this theory into a more full-fledged
+                    ontology.
                 </p>
             </Section>
         </Content>

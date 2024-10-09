@@ -20,7 +20,7 @@ const menuButtonClassName = clsx(
 );
 
 const menuItemClassName = clsx(
-    'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold', 
+    'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold',
     'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
 );
 
@@ -57,7 +57,9 @@ const NavItemComp = ({ href, text, isActive }: NavItem) => (
         href={href}
         className={clsx(
             'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
-            isActive ? 'border-b-2 border-foreground' : 'opacity-75 hover:border-b hover:border-foreground lg:hover:border-none'
+            isActive
+                ? 'border-b-2 border-foreground'
+                : 'opacity-75 hover:border-b hover:border-foreground lg:hover:border-none'
         )}
     >
         {text}
