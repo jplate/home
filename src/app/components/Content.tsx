@@ -16,7 +16,7 @@ const Content = ({ children }: ContentDivProps) => {
                         {children}
                     </main>
                 </div>
-                <div className='grid py-3'>
+                <div className='py-3'>
                     <MyFooter />
                 </div>
             </div>

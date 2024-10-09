@@ -115,7 +115,10 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
                 <div className='md:hidden'>
                     <Menu>
                         <MenuButton
-                            className={clsx('w-full px-3', menuButtonClassName)}
+                            className={clsx(
+                                'w-full px-2 py-1 mb-2',
+                                menuButtonClassName
+                            )}
                         >
                             <div className='flex-1 text-left'>
                                 <svg

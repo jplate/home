@@ -21,13 +21,13 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
         <footer className='pt-8 grow-0'>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div container mx-auto grid gap-8 px-20 mt-32 sm:mt-8 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
+            <div className='footer-div container mx-auto grid gap-8 px-20 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
                 {sections.map((info, i) => (
                     <div
                         key={i}
                         className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'
                     >
-                        <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 2xl:mr-6'>
+                        <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 2xl:mr-6 -translate-x-3 sm:translate-x-0'>
                             {info.header}
                         </h3>
                         <ul className='text-sm 2xl:inline 2xl:flex 2xl:space-x-6'>
