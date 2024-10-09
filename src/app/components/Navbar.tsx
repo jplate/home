@@ -64,7 +64,7 @@ interface NavbarProps {
     items: NavItem[];
 }
 
-const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
+const Navbar = ({ brandName, items }: NavbarProps) => {
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
