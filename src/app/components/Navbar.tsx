@@ -19,11 +19,7 @@ interface NavItem {
     isActive?: boolean;
 }
 
-const NavItemComp: React.FC<NavItem> = ({
-    href,
-    text,
-    isActive,
-}) => (
+const NavItemComp = ({ href, text, isActive }: NavItem) => (
     <Link
         href={href}
         className={`opacity-75 hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap ${isActive ? 'active-nav-item' : ''}`}

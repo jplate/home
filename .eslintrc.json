@@ -12,6 +12,7 @@
     },
     "rules": {
         "react/react-in-jsx-scope": "off" // Disable the rule that requires React to be in scope
+        //"react/prop-types": "off"
     },
     "settings": {
         "react": {
