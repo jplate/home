@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import clsx from 'clsx/lite';
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
 import useScrollbarWidth from '../hooks/useScrollbarWidth';
 
 interface NavItem {
@@ -10,25 +12,48 @@ interface NavItem {
     text: string;
 }
 
-interface NavbarProps {
-    brandName: string;
-    items: NavItem[];
-}
-
-const NavItem: React.FC<
-    NavItem & { isActive: boolean; onClick: () => void }
-> = ({ href, text, isActive, onClick }) => (
+const NavItemComp: React.FC<
+    NavItem & { isActive?: boolean }
+> = ({ href, text, isActive }) => (
     <Link
         href={href}
         className={`opacity-75 hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap ${isActive ? 'active-nav-item' : ''}`}
-        onClick={onClick}
     >
         {text}
     </Link>
 );
 
+const menuButtonClassName = clsx('inline-flex items-center gap-2 rounded-md bg-btnbg/85 text-sm text-btncolor',
+    'focus:outline-none data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
+    'data-[focus]:outline-1 data-[focus]:outline-btnhoverbg');
+
+const menuItemClassName = 'menu-item flex w-full items-center rounded-sm px-2 py-1 mt-2 font-semibold transition-colors data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor';
+
+export const MenuItemList = ({ children }: Readonly<{ children: react.ReactNode }>) => {
+    return (
+        <Transition
+                enter='transition ease-out duration-75'
+                enterFrom='opacity-0 scale-95'
+                enterTo='opacity-100 scale-100'
+                leave='transition ease-in duration-100'
+                leaveFrom='opacity-100 scale-100'
+                leaveTo='opacity-0 scale-95'>
+            <MenuItems
+                    anchor='bottom end'
+                    className='menu min-w-40 origin-top-right rounded-md border border-btnborder bg-btnbg/20 p-1 text-sm text-btncolor'
+            >
+                {children}
+            </MenuItems>
+        </Transition>
+    );
+}
+
+interface NavbarProps {
+    brandName: string;
+    items: NavItem[];
+}
+
 const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
-    const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
@@ -51,11 +76,9 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
     const pathname = usePathname();
     const sbWidth = useScrollbarWidth();
 
-    const toggleMenu = () => setIsOpen(!isOpen);
-
     return (
         <nav
-            className={`sticky top-0 lg:left-1/4 z-40 border-b border-gray-200 mt-8 px-5 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300 ${isVisible? 'opacity-100': 'opacity-0'}`}
+            className={`sticky top-0 z-40 border-b border-btnborder mt-2 px-5 lg:px-10 min-w-[70vw] md:min-w-[50vw] transition-opacity duration-300 ${isVisible? 'opacity-100': 'opacity-0'}`}
             style={{
                 marginRight: `-${sbWidth}px`,
             }}
@@ -70,64 +93,36 @@ const Navbar: React.FC<NavbarProps> = ({ brandName, items }) => {
                 <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                         {items.map((item, index) => (
-                            <NavItem
+                            <NavItemComp
                                 key={index}
                                 {...item}
                                 isActive={pathname === item.href}
-                                onClick={() => {}}
                             />
                         ))}
                     </div>
                 </div>
                 <div className='md:hidden'>
-                    <button
-                        onClick={toggleMenu}
-                        className='inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500'
-                    >
-                        <span className='sr-only'>Open main menu</span>
-                        <svg
-                            className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`}
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'
-                            aria-hidden='true'
-                        >
-                            <path
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeWidth={2}
-                                d='M4 6h16M4 12h16M4 18h16'
-                            />
-                        </svg>
-                        <svg
-                            className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`}
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'
-                            aria-hidden='true'
-                        >
-                            <path
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                strokeWidth={2}
-                                d='M6 18L18 6M6 6l12 12'
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-                <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-                    {items.map((item, index) => (
-                        <NavItem                            
-                            key={index}
-                            {...item}
-                            isActive={pathname === item.href}
-                            onClick={toggleMenu}
-                        />
-                    ))}
+                    <Menu>
+                        <MenuButton className={clsx('w-full px-3', menuButtonClassName)}>
+                            <div className='flex-1 text-left'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                            
+                            </div>
+                        </MenuButton>
+                        <MenuItemList>
+                        {items.map((val, i) => 
+                                <MenuItem key={i}>
+                                    <Link 
+                                        className={menuItemClassName}
+                                        href={val.href}
+                                    >
+                                        {val.text}
+                                    </Link>
+                                </MenuItem>
+                            )}
+                        </MenuItemList>
+                    </Menu>                    
                 </div>
             </div>
         </nav>

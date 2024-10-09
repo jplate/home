@@ -1,13 +1,13 @@
-import ContentDiv from './components/ContentDiv';
+import Content from './components/Content';
 import Image from 'next/image';
 import Section from './components/Section';
 import portrait from './images/20231014portrait.jpg';
 
 export default function Page() {
     return (
-        <ContentDiv>
+        <Content>
             <Image
-                className='hidden md:block'
+                className='hidden md:block mb-9'
                 src={portrait}
                 alt='Photo taken 2023/10/14'
                 width={180}
@@ -48,6 +48,6 @@ export default function Page() {
                     on the concept of essence.
                 </p>
             </Section>
-        </ContentDiv>
+        </Content>
     );
 }

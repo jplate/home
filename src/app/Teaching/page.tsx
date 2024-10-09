@@ -1,9 +1,9 @@
-import ContentDiv from '../components/ContentDiv';
+import Content from '../components/Content';
 import Section from '../components/Section';
 
 export default function Page() {
     return (
-        <ContentDiv>
+        <Content>
             <Section id='intro'>
                 I have taught courses in Logic and Critical Thinking, as well as
                 general introductions to philosophy. Some of my slides are
@@ -19,6 +19,6 @@ export default function Page() {
                     .
                 </span>
             </Section>
-        </ContentDiv>
+        </Content>
     );
 }

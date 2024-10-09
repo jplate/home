@@ -1,9 +1,9 @@
-import ContentDiv from '../components/ContentDiv';
+import Content from '../components/Content';
 import Section from '../components/Section';
 
 export default function Page() {
     return (
-        <ContentDiv>
+        <Content>
             <Section id='intro'>
                 <p>
                     Back in the fall of 2006, I decided to write a diagram
@@ -38,6 +38,6 @@ export default function Page() {
                     </span>
                 </p>
             </Section>
-        </ContentDiv>
+        </Content>
     );
 }

@@ -19,9 +19,9 @@ const footerStyle = (sectionsLength: number) => `
 
 const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
-        <footer className='py-8'>
+        <footer className='pt-8 grow-0'>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div container mx-auto grid gap-8 px-20 mt-48 sm:mt-8 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
+            <div className='footer-div container mx-auto grid gap-8 px-20 mt-32 sm:mt-8 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
                 {sections.map((info, i) => (
                     <div
                         key={i}
@@ -80,20 +80,28 @@ const MyFooter: React.FC = () => (
                 header: 'Contact',
                 contents: [
                     <>
-                        <span>Email: </span>
-                        <a href='mailto:janplate@gmail.com'>
-                            jan.plate@gmail.com
-                        </a>
+                        <span
+                            className='whitespace-nowrap'
+                        >
+                            Email:{' '}
+                            <a href='mailto:janplate@gmail.com'>
+                                jan.plate@gmail.com
+                            </a>
+                        </span>
                     </>,
                     <>
-                        <span>&#120143;: </span> {/* Twitter */}
-                        <a
-                            href='https://x.com/jan_plate'
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        <span
+                            className='whitespace-nowrap'
                         >
-                            @jan_plate
-                        </a>
+                            &#120143;: {/* Twitter */}
+                            <a
+                                href='https://x.com/jan_plate'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                @jan_plate
+                            </a>
+                        </span>
                     </>,
                 ],
             },

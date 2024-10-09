@@ -1,4 +1,4 @@
-import ContentDiv from '../components/ContentDiv';
+import Content from '../components/Content';
 import { BibItem, papers, reviews } from './pubs';
 
 interface PubListProps {
@@ -73,11 +73,11 @@ const PubList = ({ pubs }: PubListProps) => {
 
 export default function Page() {
     return (
-        <ContentDiv>
+        <Content>
             <h2>Journal articles</h2>
             <PubList pubs={papers} />
             <h2>Book reviews</h2>
             <PubList pubs={reviews} />
-        </ContentDiv>
+        </Content>
     );
 }

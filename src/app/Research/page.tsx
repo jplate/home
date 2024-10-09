@@ -1,9 +1,9 @@
-import ContentDiv from '../components/ContentDiv';
+import Content from '../components/Content';
 import Section from '../components/Section';
 
 export default function Page() {
     return (
-        <ContentDiv>
+        <Content>
             <Section id='intro'>
                 <p>
                     My research generally focuses on the metaphysics of
@@ -16,6 +16,6 @@ export default function Page() {
                     expanding this theory into a more full-fledged ontology.
                 </p>
             </Section>
-        </ContentDiv>
+        </Content>
     );
 }
