@@ -2,7 +2,7 @@ import react from 'react';
 
 interface SectionProps {
     id: string;
-    header?: react.ReactNode
+    header?: react.ReactNode;
     children: react.ReactNode;
 }
 

@@ -78,7 +78,7 @@ export default function Page() {
             <Section id='papers' header='Journal articles'>
                 <PubList pubs={papers} />
             </Section>
-            <Section id='reviews' header='Book reviews'>                
+            <Section id='reviews' header='Book reviews'>
                 <PubList pubs={reviews} />
             </Section>
         </Content>
