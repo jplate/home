@@ -1,4 +1,5 @@
 import Content from '../components/Content';
+import Section from '../components/Section';
 import { BibItem, papers, reviews } from './pubs';
 
 interface PubListProps {
@@ -74,10 +75,12 @@ const PubList = ({ pubs }: PubListProps) => {
 export default function Page() {
     return (
         <Content>
-            <h2>Journal articles</h2>
-            <PubList pubs={papers} />
-            <h2>Book reviews</h2>
-            <PubList pubs={reviews} />
+            <Section id='papers' header='Journal articles'>
+                <PubList pubs={papers} />
+            </Section>
+            <Section id='reviews' header='Book reviews'>                
+                <PubList pubs={reviews} />
+            </Section>
         </Content>
     );
 }

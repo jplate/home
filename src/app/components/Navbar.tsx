@@ -37,7 +37,7 @@ export const MenuItemList = ({
         >
             <MenuItems
                 anchor='bottom end'
-                className='menu z-50 min-w-40 origin-top-right [--anchor-gap:0.25rem] rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
+                className='menu z-50 min-w-40 transition origin-top-right [--anchor-gap:0.25rem] rounded-md border border-btnborder shadow-lg bg-btnbg/20 p-1 text-sm text-btncolor'
             >
                 {children}
             </MenuItems>
@@ -75,7 +75,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const triggerPoint = 5; // Adjust this value to set when the fadeout should start
+            const triggerPoint = 5; // Adjust this value to set when the fade-out should start
             if (window.scrollY > triggerPoint) {
                 setIsVisible(false);
             } else {
@@ -95,12 +95,12 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
     return (
         <nav
             className={clsx(
-                'sticky top-0 z-40 border-b border-btnborder min-w-[70vw] md:min-w-[50vw] px-5 lg:px-10 pt-2 transition-opacity duration-300',
+                'sticky top-0 z-40 border-b border-btnborder px-5 lg:px-10 pt-2 transition-opacity duration-300',
                 isVisible ? 'opacity-100' : 'opacity-0'
             )}
         >
             <div className='flex justify-between'>
-                <Link href='/' className='logo mr-5'>
+                <Link href='/' className='logo'>
                     {brandName}
                 </Link>
                 <div className='hidden md:block'>
