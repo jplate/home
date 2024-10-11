@@ -106,7 +106,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
             )}
         >
             <div className='flex justify-between'>
-                <Link href='/' shallow scroll={false} className='logo'>
+                <Link href='/Research' shallow scroll={false} className='logo'>
                     {brandName}
                 </Link>
                 <div className='hidden md:block'>
@@ -168,7 +168,7 @@ const MyNavbar: React.FC = () => (
     <Navbar
         brandName='Jan Plate'
         items={[
-            { href: '/', text: 'Home' },
+            { href: '/Research', text: 'Home' },
             { href: '/Research', text: 'Research' },
             { href: '/Publications', text: 'Publications' },
             { href: '/Teaching', text: 'Teaching' },
