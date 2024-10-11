@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Content from './components/Content';
 import Image from 'next/image';
