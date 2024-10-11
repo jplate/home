@@ -1,7 +1,7 @@
 'use client';
 
 import react, { useEffect, useState } from 'react';
-//import Link from 'next/link';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx/lite';
 import {
@@ -56,9 +56,9 @@ interface NavItem {
 }
 
 const NavItemComp = ({ href, text, isActive }: NavItem) => (
-    <a
+    <Link
         href={href}
-        //scroll={false}
+        scroll={false}
         className={clsx(
             'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
             isActive
@@ -67,7 +67,7 @@ const NavItemComp = ({ href, text, isActive }: NavItem) => (
         )}
     >
         {text}
-    </a>
+    </Link>
 );
 
 interface NavbarProps {
@@ -105,13 +105,9 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
             )}
         >
             <div className='flex justify-between'>
-                <a
-                    href='/'
-                    //scroll={false}
-                    className='logo'
-                >
+                <Link href='/' scroll={false} className='logo'>
                     {brandName}
-                </a>
+                </Link>
                 <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                         {items.map((item, index) => (
@@ -151,12 +147,12 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                         <MenuItemList>
                             {items.map((val, i) => (
                                 <MenuItem key={i}>
-                                    <a
+                                    <Link
                                         className={menuItemClassName}
                                         href={val.href}
                                     >
                                         {val.text}
-                                    </a>
+                                    </Link>
                                 </MenuItem>
                             ))}
                         </MenuItemList>
