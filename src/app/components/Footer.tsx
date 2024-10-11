@@ -19,7 +19,7 @@ const footerStyle = (sectionsLength: number) => `
 
 const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
-        <footer className='pt-8 grow-0'>
+        <footer className='pt-8'>
             <style>{footerStyle(sections.length)}</style>
             <div className='footer-div mx-auto max-w-fit grid gap-8'>
                 {sections.map((info, i) => (
