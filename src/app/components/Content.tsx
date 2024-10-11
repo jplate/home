@@ -1,5 +1,7 @@
 import React from 'react';
-import MyNavbar from './Navbar';
+import dynamic from "next/dynamic";
+
+const MyNavbar = dynamic(() => import('./Navbar'), {ssr: false,});
 import MyFooter from './Footer';
 
 interface ContentDivProps {

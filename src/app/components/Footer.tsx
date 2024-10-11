@@ -21,7 +21,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
         <footer className='pt-8 grow-0'>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div mx-auto grid gap-8 px-20 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
+            <div className='footer-div mx-auto max-w-fit grid gap-8'>
                 {sections.map((info, i) => (
                     <div
                         key={i}
@@ -40,8 +40,8 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
                     </div>
                 ))}
             </div>
-            <div className='text-xs mx-auto mt-3 text-center border-t border-btnborder/60 pt-4'>
-                <p className='px-8'>
+            <div className='xl:max-w-[80vw] 2xl:max-w-[70vw] mx-auto mt-3 border-t border-btnborder/60 pt-4'>
+                <p className='text-xs text-center px-8'>
                     © {new Date().getFullYear()} {copyRightHolder}.{' '}
                     {licenseInfo}
                 </p>
