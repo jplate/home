@@ -1,11 +1,11 @@
-import React from 'react';
+import react from 'react';
 
 interface FooterProps {
     copyRightHolder: string;
     licenseInfo: string;
     sections: {
         header: string;
-        contents: React.JSX.Element[];
+        contents: react.JSX.Element[];
     }[];
 }
 
@@ -21,7 +21,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
         <footer className='pt-8 grow-0'>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div container mx-auto grid gap-8 px-20 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
+            <div className='footer-div mx-auto grid gap-8 px-20 sm:px-16 md:px-32 lg:px-64 2xl:px-72'>
                 {sections.map((info, i) => (
                     <div
                         key={i}
@@ -40,7 +40,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
                     </div>
                 ))}
             </div>
-            <div className='container text-xs mx-auto mt-3 text-center border-t border-btnborder/60 pt-4'>
+            <div className='text-xs mx-auto mt-3 text-center border-t border-btnborder/60 pt-4'>
                 <p className='px-8'>
                     © {new Date().getFullYear()} {copyRightHolder}.{' '}
                     {licenseInfo}
@@ -50,7 +50,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     );
 };
 
-const MyFooter: React.FC = () => (
+const MyFooter = () => (
     <Footer
         copyRightHolder='Jan Plate'
         licenseInfo='The source code for this website is licensed under the MIT License.'
@@ -79,26 +79,22 @@ const MyFooter: React.FC = () => (
             {
                 header: 'Contact',
                 contents: [
-                    <>
-                        <span className='whitespace-nowrap'>
-                            Email:{' '}
-                            <a href='mailto:janplate@gmail.com'>
-                                jan.plate@gmail.com
-                            </a>
-                        </span>
-                    </>,
-                    <>
-                        <span className='whitespace-nowrap'>
-                            &#120143;: {/* Twitter */}
-                            <a
-                                href='https://x.com/jan_plate'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                                @jan_plate
-                            </a>
-                        </span>
-                    </>,
+                    <span className='whitespace-nowrap'>
+                        Email:{' '}
+                        <a href='mailto:janplate@gmail.com'>
+                            jan.plate@gmail.com
+                        </a>
+                    </span>,
+                    <span className='whitespace-nowrap'>
+                        &#120143;: {/* Twitter */}
+                        <a
+                            href='https://x.com/jan_plate'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            @jan_plate
+                        </a>
+                    </span>,
                 ],
             },
         ]}

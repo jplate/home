@@ -54,6 +54,7 @@ interface NavItem {
 const NavItemComp = ({ href, text, isActive }: NavItem) => (
     <Link
         href={href}
+        scroll={false}
         className={clsx(
             'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
             isActive
