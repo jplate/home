@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MyNavbar from './Navbar';
+//import MyNavbar from './Navbar';
 import MyFooter from './Footer';
 
 interface ContentDivProps {
