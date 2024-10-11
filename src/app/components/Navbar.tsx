@@ -12,6 +12,10 @@ import {
     Transition,
 } from '@headlessui/react';
 
+/*
+Unresolved issue: Somehow the use of this navbar causes next.js to attempt to fetch a non-existing file 'home.txt'. 
+*/
+
 const menuButtonClassName = clsx(
     'inline-flex items-center rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
     'focus:outline-none data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
@@ -54,6 +58,7 @@ interface NavItem {
 const NavItemComp = ({ href, text, isActive }: NavItem) => (
     <Link
         href={href}
+        shallow
         scroll={false}
         className={clsx(
             'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
