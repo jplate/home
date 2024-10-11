@@ -1,7 +1,7 @@
 {
     "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
     "extends": [
-        "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
+        "plugin:@next/next/recommended",
         "plugin:@typescript-eslint/recommended", // Uses the recommended rules from @typescript-eslint/eslint-plugin
         "plugin:prettier/recommended" // Uses the recommended rules from prettier
     ],
@@ -11,7 +11,6 @@
         "jsx": true // Allows JSX
     },
     "rules": {
-        "react/react-in-jsx-scope": "off", // Disable the rule that requires React to be in scope
         "@typescript-eslint/no-explicit-any": "off"
     },
     "settings": {
