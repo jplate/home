@@ -79,13 +79,13 @@ const MyFooter = () => (
             {
                 header: 'Contact',
                 contents: [
-                    <span className='whitespace-nowrap'>
+                    <span className='whitespace-nowrap' key='1'>
                         Email:{' '}
                         <a href='mailto:janplate@gmail.com'>
                             jan.plate@gmail.com
                         </a>
                     </span>,
-                    <span className='whitespace-nowrap'>
+                    <span className='whitespace-nowrap' key='2'>
                         &#120143;: {/* Twitter */}
                         <a
                             href='https://x.com/jan_plate'
