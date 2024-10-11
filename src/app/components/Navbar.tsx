@@ -105,9 +105,11 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
             )}
         >
             <div className='flex justify-between'>
-                <a href='/' 
-                    //scroll={false} 
-                    className='logo'>
+                <a
+                    href='/'
+                    //scroll={false}
+                    className='logo'
+                >
                     {brandName}
                 </a>
                 <div className='hidden md:block'>
