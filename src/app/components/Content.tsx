@@ -10,7 +10,7 @@ interface ContentDivProps {
 const Content = ({ children }: ContentDivProps) => {
     return (
         <>
-            <MyNavbar />
+            {/* <MyNavbar /> */}
             <div className='flex flex-col min-h-[90vh]'>
                 <div className='grid flex-grow items-center'>
                     <main className='flex-col p-8 max-h-min mx-auto sm:px-10 font-[family-name:var(--font-geist-sans)]'>
