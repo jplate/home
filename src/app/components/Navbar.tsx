@@ -58,6 +58,7 @@ interface NavItem {
 const NavItemComp = ({ href, text, isActive }: NavItem) => (
     <Link
         href={href}
+        shallow
         scroll={false}
         className={clsx(
             'nav-item hover:opacity-100 transition-opacity px-3 py-2 text-sm font-medium whitespace-nowrap',
@@ -105,7 +106,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
             )}
         >
             <div className='flex justify-between'>
-                <Link href='/' className='logo'>
+                <Link href='/' shallow scroll={false} className='logo'>
                     {brandName}
                 </Link>
                 <div className='hidden md:block'>
@@ -167,7 +168,7 @@ const MyNavbar: React.FC = () => (
     <Navbar
         brandName='Jan Plate'
         items={[
-            { href: '/Research', text: 'Home' },
+            { href: '/', text: 'Home' },
             { href: '/Research', text: 'Research' },
             { href: '/Publications', text: 'Publications' },
             { href: '/Teaching', text: 'Teaching' },
