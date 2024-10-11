@@ -149,6 +149,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                                 <MenuItem key={i}>
                                     <Link
                                         className={menuItemClassName}
+                                        scroll={false}
                                         href={val.href}
                                     >
                                         {val.text}
