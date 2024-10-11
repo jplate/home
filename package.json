@@ -7,11 +7,11 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "export": "next export",
         "deploy": "next build && next export && npx gh-pages -d out",
         "format": "prettier --write ."
     },
     "dependencies": {
+        "@tailwindcss/typography": "^0.5.15",
         "@headlessui/react": "^2.1.9",
         "autoprefixer": "^10.4.20",
         "clsx": "^2.1.1",
@@ -21,7 +21,6 @@
         "sharp": "^0.33.5"
     },
     "devDependencies": {
-        "@tailwindcss/typography": "^0.5.15",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
