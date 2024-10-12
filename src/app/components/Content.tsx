@@ -20,7 +20,7 @@ const Content = ({ children }: ContentDivProps) => {
                 <MyFooter />
             </div>
         </div>
-);
+    );
 };
 
 export default Content;
