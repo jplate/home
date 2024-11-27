@@ -1,7 +1,7 @@
 import Content from './components/Content';
 import Image from 'next/image';
 import Section from './components/Section';
-import portrait from './images/20231014portrait.jpg';
+import portrait from './images/20241127_210709.jpg';
 
 export default function Page() {
     return (
@@ -11,7 +11,7 @@ export default function Page() {
                     picture loads. */}
                 <Image
                     src={portrait}
-                    alt='Photo taken 2023/10/14'
+                    alt='Photo taken 2024/11/27'
                     width={180}
                     style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
                     priority
