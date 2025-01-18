@@ -1,43 +1,51 @@
+'use client';
+import { useEffect, useState } from 'react';
 import Content from './components/Content';
 import Image from 'next/image';
 import Section from './components/Section';
-import portrait from './images/20241127_210709.jpg';
+import portraitSrc from './images/20241127_210709.jpg';
+import lowResPortraitSrc from './images/20241127_210709 (lo res).jpg';
 
 export default function Page() {
+    const [portrait, setPortrait] = useState<JSX.Element | null>(null);
+
+    useEffect(() => {
+        const img = (
+            <Image
+                src={portraitSrc}
+                alt='Photo taken 2024/11/27'
+                width={180}
+                style={{ borderRadius: '5%', border: '1px solid #fff', filter: 'grayscale(100%)' }}
+            />
+        );
+        setPortrait(img);
+    }, []);
+
     return (
         <Content>
             <div className='hidden md:block mb-9 min-h-[210px]'>
-                {/* we pre-specify the needed height so as to trigger the vertical scrollbar immediately, rather than only when the 
-                    picture loads. */}
-                <Image
-                    src={portrait}
-                    alt='Photo taken 2024/11/27'
-                    width={180}
-                    style={{ filter: 'grayscale(100%)' }} // Apply greyscale filter
-                    priority
-                />
+                {portrait ?? (
+                    <Image
+                        src={lowResPortraitSrc}
+                        alt='Photo taken 2024/11/27'
+                        width={180}
+                        style={{ borderRadius: '5%', border: '1px solid #fff' }}
+                        priority
+                    />
+                )}
             </div>
             <Section id='intro'>
                 <p>
-                    I&rsquo;m an analytic philosopher, working mainly in
-                    metaphysics and philosophical logic. I live in Lugano, where
-                    I&rsquo;ve been a postdoc at the{' '}
-                    <a
-                        href='https://www.usi.ch/en'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
+                    I&rsquo;m an analytic philosopher, working mainly in metaphysics and philosophical logic.
+                    I live in Lugano, where I&rsquo;ve been a postdoc at the{' '}
+                    <a href='https://www.usi.ch/en' target='_blank' rel='noopener noreferrer'>
                         University of Italian Switzerland
                     </a>{' '}
                     (USI) until September 2022.
                 </p>
                 <p>
                     I&rsquo;ve obtained my PhD from{' '}
-                    <a
-                        href='https://washu.edu/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
+                    <a href='https://washu.edu/' target='_blank' rel='noopener noreferrer'>
                         Washington University in St.&nbsp;Louis
                     </a>{' '}
                     with a{' '}

@@ -6,8 +6,7 @@ export default function Page() {
         <Content>
             <Section id='intro'>
                 <p>
-                    Back in the fall of 2006, I decided to write a diagram
-                    editor in the form of a{' '}
+                    Back in the fall of 2006, I decided to write a diagram editor in the form of a{' '}
                     <a
                         href='https://en.wikipedia.org/wiki/Java_applet'
                         target='_blank'
@@ -15,23 +14,17 @@ export default function Page() {
                     >
                         Java applet
                     </a>{' '}
-                    that would allow the user to generate <i>texdraw</i> code to
-                    be used in a LaTeX document. Sadly, however, browser support
-                    for Java applets would soon be on the wane, and so I gave up
-                    on the idea of maintaining a web site for my diagram editor.
+                    that would allow the user to generate <i>texdraw</i> code to be used in a LaTeX document.
+                    Sadly, however, browser support for Java applets would soon be on the wane, and so I gave
+                    up on the idea of maintaining a web site for my diagram editor.
                 </p>
                 <p>
-                    Eventually, in the spring of 2024, I thought that it might
-                    be interesting to reimplement the applet (or something like
-                    it) as a modern web application. The result of this
-                    effort&mdash;still &lsquo;under construction&rsquo;, but
-                    already more or less usable&mdash;is available{' '}
+                    Eventually, in the spring of 2024, I thought that it might be interesting to reimplement
+                    the applet (or something like it) as a modern web application. The result of this
+                    effort&mdash;still &lsquo;under construction&rsquo;, but already usable (except for some
+                    yet-to-be-implemented features)&mdash;is available{' '}
                     <span style={{ whiteSpace: 'nowrap' }}>
-                        <a
-                            href='https://jplate.github.io/pasi'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
+                        <a href='https://jplate.github.io/pasi' target='_blank' rel='noopener noreferrer'>
                             here
                         </a>
                         .

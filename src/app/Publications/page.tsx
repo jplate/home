@@ -56,9 +56,7 @@ const PubList = ({ pubs }: PubListProps) => {
                                     ) : (
                                         coauthor.name
                                     )}
-                                    {coauthorIndex < pub.coauthors!.length - 1
-                                        ? ', '
-                                        : ''}
+                                    {coauthorIndex < pub.coauthors!.length - 1 ? ', ' : ''}
                                 </span>
                             ))}
                             )

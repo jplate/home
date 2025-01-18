@@ -4,13 +4,7 @@ import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx/lite';
-import {
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
-    Transition,
-} from '@headlessui/react';
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
 
 /*
 Unresolved issue: Somehow the use of this navbar causes next.js to attempt to fetch a non-existing file 'home.txt'. 
@@ -27,9 +21,7 @@ const menuItemClassName = clsx(
     'data-[focus]:bg-btnhoverbg data-[focus]:text-btnhovercolor transition-colors duration-300'
 );
 
-export const MenuItemList = ({
-    children,
-}: Readonly<{ children: react.ReactNode }>) => {
+export const MenuItemList = ({ children }: Readonly<{ children: react.ReactNode }>) => {
     return (
         <Transition
             enter='transition ease-out duration-75'
@@ -111,22 +103,13 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                 <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                         {items.map((item, index) => (
-                            <NavItemComp
-                                key={index}
-                                {...item}
-                                isActive={pathname === item.href}
-                            />
+                            <NavItemComp key={index} {...item} isActive={pathname === item.href} />
                         ))}
                     </div>
                 </div>
                 <div className='md:hidden'>
                     <Menu>
-                        <MenuButton
-                            className={clsx(
-                                'w-full px-2 py-1 mb-2',
-                                menuButtonClassName
-                            )}
-                        >
+                        <MenuButton className={clsx('w-full px-2 py-1 mb-2', menuButtonClassName)}>
                             <div className='flex-1 text-left'>
                                 <svg /* The 'hamburger' icon */
                                     xmlns='http://www.w3.org/2000/svg'
@@ -151,6 +134,7 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                                         className={menuItemClassName}
                                         scroll={false}
                                         href={val.href}
+                                        prefetch
                                     >
                                         {val.text}
                                     </Link>

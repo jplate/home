@@ -31,8 +31,7 @@ export const papers: BibItem[] = [
         ),
         subtitle: (
             <>
-                Introduction to a Special Issue of <i>Dialectica</i> on the
-                Metaphysics of Relational States
+                Introduction to a Special Issue of <i>Dialectica</i> on the Metaphysics of Relational States
             </>
         ),
         details: (

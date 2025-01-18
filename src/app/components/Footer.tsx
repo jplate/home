@@ -23,10 +23,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
             <style>{footerStyle(sections.length)}</style>
             <div className='footer-div mx-auto max-w-fit grid gap-8'>
                 {sections.map((info, i) => (
-                    <div
-                        key={i}
-                        className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'
-                    >
+                    <div key={i} className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'>
                         <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 mr-6 -translate-x-3 sm:translate-x-0'>
                             {info.header}
                         </h3>
@@ -42,8 +39,7 @@ const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
             </div>
             <div className='xl:max-w-[80vw] 2xl:max-w-[70vw] mx-auto mt-3 border-t border-btnborder/60 pt-4'>
                 <p className='text-xs text-center px-8'>
-                    © {new Date().getFullYear()} {copyRightHolder}.{' '}
-                    {licenseInfo}
+                    © {new Date().getFullYear()} {copyRightHolder}. {licenseInfo}
                 </p>
             </div>
         </footer>
@@ -66,12 +62,7 @@ const MyFooter = () => (
                     >
                         PhilPapers profile
                     </a>,
-                    <a
-                        key='2'
-                        href='https://github.com/jplate'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
+                    <a key='2' href='https://github.com/jplate' target='_blank' rel='noopener noreferrer'>
                         GitHub profile
                     </a>,
                 ],
@@ -80,18 +71,11 @@ const MyFooter = () => (
                 header: 'Contact',
                 contents: [
                     <span className='whitespace-nowrap' key='1'>
-                        Email:{' '}
-                        <a href='mailto:janplate@gmail.com'>
-                            jan.plate@gmail.com
-                        </a>
+                        Email: <a href='mailto:janplate@gmail.com'>jan.plate@gmail.com</a>
                     </span>,
                     <span className='whitespace-nowrap' key='2'>
                         &#120143;: {/* Twitter */}
-                        <a
-                            href='https://x.com/jan_plate'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
+                        <a href='https://x.com/jan_plate' target='_blank' rel='noopener noreferrer'>
                             @jan_plate
                         </a>
                     </span>,
