@@ -4,35 +4,19 @@ import Content from './components/Content';
 import Image from 'next/image';
 import Section from './components/Section';
 import portraitSrc from './images/20241127_210709 (bw).jpg';
-import lowResPortraitSrc from './images/20241127_210709 (bw lores).jpg';
 
 export default function Page() {
-    const [portrait, setPortrait] = useState<JSX.Element | null>(null);
-
-    useEffect(() => {
-        const img = (
-            <Image
-                src={portraitSrc}
-                alt='Photo taken 2024/11/27'
-                width={180}
-                style={{ borderRadius: '5%', border: '1px solid #fff', filter: 'grayscale(100%)' }}
-            />
-        );
-        setPortrait(img);
-    }, []);
-
     return (
         <Content>
             <div className='hidden md:block mb-9 min-h-[210px]'>
-                {portrait ?? (
-                    <Image
-                        src={lowResPortraitSrc}
-                        alt='Photo taken 2024/11/27'
-                        width={180}
-                        style={{ borderRadius: '5%', border: '1px solid #fff' }}
-                        priority
-                    />
-                )}
+                <Image
+                    src={portraitSrc}
+                    alt='Photo taken 2024/11/27'
+                    width={180}
+                    style={{ borderRadius: '5%', border: '1px solid #fff' }}
+                    placeholder='blur'
+                    priority
+                />
             </div>
             <Section id='intro'>
                 <p>
