@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import Content from './components/Content';
 import Image from 'next/image';
 import Section from './components/Section';
-import portraitSrc from './images/20241127_210709.jpg';
-import lowResPortraitSrc from './images/20241127_210709 (lo res).jpg';
+import portraitSrc from './images/20241127_210709 (bw).jpg';
+import lowResPortraitSrc from './images/20241127_210709 (bw lores).jpg';
 
 export default function Page() {
     const [portrait, setPortrait] = useState<JSX.Element | null>(null);
