@@ -2,9 +2,13 @@
 
 import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx/lite';
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
+
+import portraitSrc from '../images/20241127_210709 (bw).jpg';
+
 
 /*
 Unresolved issue: Somehow the use of this navbar causes next.js to attempt to fetch a non-existing file 'home.txt'. 
@@ -89,6 +93,16 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
 
     const pathname = usePathname();
 
+    const img = (
+        <Image 
+            src={portraitSrc}
+            alt='Photo taken 2024/11/27'
+            width={180}
+            style={{ borderRadius: '5%', border: '1px solid #fff', filter: 'grayscale(100%)' }}
+        />
+    );
+
+
     return (
         <nav
             className={clsx(
@@ -100,6 +114,9 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                 <Link href='/' scroll={false} className='logo'>
                     {brandName}
                 </Link>
+                <span className='hidden'>
+                    {img}
+                </span>
                 <div className='hidden md:block'>
                     <div className='ml-10 flex items-baseline space-x-4'>
                         {items.map((item, index) => (
