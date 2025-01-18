@@ -152,7 +152,7 @@ const MyNavbar: React.FC = () => (
     <Navbar
         brandName='Jan Plate'
         items={[
-            { href: '/', text: 'Home' },
+            { href: '/Home', text: 'Home' }, // We put the home page into the subfolder because that somehow helps to cache the image (?)
             { href: '/Research', text: 'Research' },
             { href: '/Publications', text: 'Publications' },
             { href: '/Teaching', text: 'Teaching' },
