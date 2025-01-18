@@ -2,7 +2,6 @@
 
 import react, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx/lite';
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
