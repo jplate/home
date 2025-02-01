@@ -14,15 +14,14 @@ export default function Page() {
                     >
                         Java applet
                     </a>{' '}
-                    that would allow the user to generate <i>texdraw</i> code to be used in a LaTeX document.
+                    that would allow the user to generate <i>TeXdraw</i> code to be used in a LaTeX document.
                     Sadly, however, browser support for Java applets would soon be on the wane, and so I gave
                     up on the idea of maintaining a web site for my diagram editor.
                 </p>
                 <p>
-                    Eventually, in the spring of 2024, I thought that it might be interesting to reimplement
-                    the applet (or something like it) as a modern web application. The result of this
-                    effort&mdash;still &lsquo;under construction&rsquo;, but already usable (except for some
-                    yet-to-be-implemented features)&mdash;is available{' '}
+                    Eventually, in the spring of 2024, I thought that it might be interesting to implement the
+                    applet, or some variant of it, as a modern web application. The result of this (by now
+                    largely complete) effort is available{' '}
                     <span style={{ whiteSpace: 'nowrap' }}>
                         <a href='https://jplate.github.io/pasi' target='_blank' rel='noopener noreferrer'>
                             here
