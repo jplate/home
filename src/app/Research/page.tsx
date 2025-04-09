@@ -20,12 +20,8 @@ export default function Page() {
                         &rsquo;),{' '}
                     </span>
                     I develop an alternative to the &lsquo;Simple Theory of Types&rsquo; that is commonly used
-                    in the context of higher-order metaphysics. My current work focuses on the task of
-                    expanding this theory into a more full-fledged ontology.
-                </p>
-                <p>
-                    In OTT (the paper), I express skepticism not only about Simple Type Theory, but also
-                    about:
+                    in the context of higher-order metaphysics. In the same paper, I express skepticism not
+                    only about Simple Type Theory, but also about:
                 </p>
                 <ul>
                     <li>plural logic (fn. 62) and</li>
@@ -39,6 +35,24 @@ export default function Page() {
                         fundamental property.
                     </li>
                 </ul>
+                <p>
+                    I further propose that sets are a special case of properties (or can be profitably{' '}
+                    <i>replaced</i> with properties, as suggested by van Inwagen in chapter&nbsp;6 of his{' '}
+                    <span className='whitespace-nowrap'>
+                        <a
+                            href='https://global.oup.com/academic/product/being-9780192883964'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            recent book
+                        </a>
+                    </span>
+                    ) and that properties are a special case of roles. This brings into view an ontology that
+                    is&mdash;at least in my eyes&mdash;attractively elegant: there are no
+                    &lsquo;abstract&rsquo; objects other than states of affairs and roles; likewise, there are
+                    no &lsquo;complex&rsquo; entities other than states of affairs and roles; and as a result
+                    all structure is logical structure.
+                </p>
             </Section>
         </Content>
     );
