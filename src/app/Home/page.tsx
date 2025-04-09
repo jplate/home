@@ -12,7 +12,7 @@ export default function Page() {
                     src={portraitSrc}
                     alt='Photo taken 2024/11/27'
                     width={180}
-                    style={{ borderRadius: '5%', border: '1px solid #fff' }}
+                    style={{ borderRadius: '1rem', border: '1px solid #fff' }}
                     placeholder='blur'
                     priority
                 />
