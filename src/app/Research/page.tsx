@@ -25,7 +25,7 @@ export default function Page() {
                 </p>
                 <ul>
                     <li>plural logic (fn. 62) and</li>
-                    <li>a topic-neutral concept of parthood (§6.2).</li>
+                    <li>the topic-neutral concept of parthood (§6.2).</li>
                 </ul>
                 <p>In work that is currently unpublished, I defend:</p>
                 <ul>
