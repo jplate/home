@@ -42,6 +42,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::selection {
+    background-color: #b3d4fc;
+    color: #000; /* black text */
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
