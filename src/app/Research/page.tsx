@@ -49,8 +49,8 @@ export default function Page() {
                     </span>
                     ) and that properties are a special case of roles. This brings into view an ontology that
                     is&mdash;at least in my eyes&mdash;attractively elegant: there are no
-                    &lsquo;abstract&rsquo; objects other than states of affairs and roles; and likewise, there are
-                    no &lsquo;complex&rsquo; entities other than states of affairs and roles.
+                    &lsquo;abstract&rsquo; objects other than states of affairs and roles; and likewise, there
+                    are no &lsquo;complex&rsquo; entities other than states of affairs and roles.
                 </p>
             </Section>
         </Content>
