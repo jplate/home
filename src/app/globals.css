@@ -148,18 +148,21 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-/* PhilPapers logo hover effect */
 .philpapers-link {
-    transition: transform 0.2s ease;
-    will-change: transform; /* Optimize for animations */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, filter;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .philpapers-link:hover {
-    transform: scale(1.15);
+    transform: scale(1.2) translateY(-2px);
+    filter: brightness(1.1) saturate(1.2);
+    opacity: 0.8;
 }
 
 /* Ensure the logo itself also has smooth transitions */
 .philpapers-link svg {
-    transition: transform 0.2s ease;
-    will-change: transform;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
 }
