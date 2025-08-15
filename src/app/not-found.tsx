@@ -26,7 +26,7 @@ const NotFound = () => {
                         <span>404</span>
                     </div>
                 </div>
-                
+
                 <Section id='main' header='Page Not Found'>
                     <p>The page you were looking for doesn&rsquo;t exist.</p>
                     <p>
