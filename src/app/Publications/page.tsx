@@ -69,10 +69,10 @@ const PubList = ({ pubs }: PubListProps) => {
                             <span style={{ marginLeft: '0.5em' }}>
                                 <a
                                     href={pub.philPLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    title="View on PhilPapers (opens in new tab)"
-                                    className="philpapers-link"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    title='View on PhilPapers (opens in new tab)'
+                                    className='philpapers-link'
                                     style={{
                                         textDecoration: 'none',
                                         display: 'inline-block',

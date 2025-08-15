@@ -7,48 +7,40 @@ const PhilPapersLogo = ({ size = 16, className = '' }: PhilPapersLogoProps) => {
     // Calculate dimensions based on size parameter
     const width = size * 1.25; // Maintain aspect ratio (30/24 = 1.25)
     const height = size;
-    
-    // viewBox values:
-    const rectWidth = 30;
-    const rectHeight = 24;
 
-    // Calculate scaled values based on the viewBox coordinate system
-    const textX = rectWidth / 2; // Center horizontally
-    const textY = rectHeight * 0.67; // Position text vertically (16/24 ≈ 0.67)
-    const fontSize = rectHeight * 0.5; // Scale font size proportionally (12/24 = 0.5)
-    
     return (
         <svg
             width={width}
             height={height}
-            viewBox={`0 0 ${rectWidth} ${rectHeight}`}
+            viewBox='0 0 207 207'
             className={className}
             style={{ display: 'inline-block' }}
+            xmlns='http://www.w3.org/2000/svg'
         >
             <defs>
-                <linearGradient id="philpapersGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#0066CC', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#009933', stopOpacity: 1 }} />
-                </linearGradient>
+                <style>
+                    {`
+                        .cls-1 {
+                            fill: #109d49;
+                        }
+                        .cls-2 {
+                            fill: #074ba9;
+                        }
+                    `}
+                </style>
             </defs>
-            <rect 
-                width={rectWidth} 
-                height={rectHeight} 
-                rx="3" 
-                fill="url(#philpapersGradient)" 
-                filter="drop-shadow(0 1px 2px rgba(0,0,0,0.1))" 
+            <path
+                className='cls-2'
+                d='M116.98,99.13c5.83-1.58,11.03-4.49,15.6-8.74,10.67-9.69,16.01-22.6,16.01-38.72,0-8.93-1.55-17.13-4.66-24.59-3.1-7.46-7.54-13.53-13.31-18.22-5.25-4.39-11.28-7.34-18.08-8.87h-36.48V101.5h16.01c10.78,0,19.09-.79,24.91-2.37Z'
             />
-            <text
-                x={textX}
-                y={textY}
-                textAnchor="middle"
-                fill="white"
-                fontSize={fontSize}
-                fontWeight="bold"
-                fontFamily="Arial, sans-serif"
-            >
-                PP
-            </text>
+            <path
+                className='cls-2'
+                d='M153.79,0c3.9,1.78,7.62,4.02,11.14,6.75,15.46,11.76,23.2,27.45,23.2,47.05s-7.84,34.53-23.53,43.78c-8.17,4.79-18.08,7.68-29.73,8.66-3.7,.33-12.64,.49-26.79,.49h-32.02v58.65c0,11.11,.63,19.36,1.88,24.75,1.25,5.39,3.57,9.83,6.94,13.31,1.23,1.28,2.55,2.41,3.95,3.41h118.03V0h-53.06Z'
+            />
+            <path
+                className='cls-1'
+                d='M34.89,11c-2.83-4.35-6.43-7.6-10.78-9.72-.96-.47-2-.89-3.09-1.28H0V206.86H27.51c1.4-1,2.71-2.13,3.95-3.41,3.48-3.48,5.83-7.9,7.02-13.23,1.2-5.33,1.8-13.61,1.8-24.83V44.98c0-9.37-.41-16.58-1.23-21.65-.82-5.06-2.21-9.17-4.17-12.33Z'
+            />
         </svg>
     );
 };
