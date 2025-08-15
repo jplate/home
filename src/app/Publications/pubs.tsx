@@ -15,15 +15,6 @@ export interface BibItem {
 
 export const papers: BibItem[] = [
     {
-        title: 'Ordinal Type Theory',
-        details: (
-            <>
-                Forthcoming in <i>Inquiry</i>
-            </>
-        ),
-        link: 'https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2278031',
-    },
-    {
         title: (
             <>
                 <i>Quo vadis</i>, Metaphysics of Relations?
@@ -40,6 +31,16 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://philpapers.org/rec/PLAQVM',
+    },
+    {
+        title: 'Ordinal Type Theory',
+        details: (
+            <>
+                <i>Inquiry</i> <b>68</b>: 2344&ndash;2400
+            </>
+        ),
+        link: 'https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2278031',
+        year: '2025',
     },
     {
         title: 'Qualitative Properties and Relations',
