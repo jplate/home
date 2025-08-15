@@ -148,6 +148,11 @@ nav {
     backdrop-filter: blur(10px);
 }
 
+
+/******************************************************************************
+PhilPapers-links
+*******************************************************************************/
+
 .philpapers-link {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform, filter, opacity;
@@ -166,4 +171,41 @@ nav {
 .philpapers-link svg {
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform, opacity;
+}
+
+
+/******************************************************************************
+For not-found.tsx
+*******************************************************************************/
+
+/* 404 Marquee Styles */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+    padding: 1rem 0;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 8s linear infinite;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.marquee span {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    opacity: 0.8;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
