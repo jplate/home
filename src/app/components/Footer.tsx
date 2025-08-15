@@ -19,9 +19,9 @@ const footerStyle = (sectionsLength: number) => `
 
 const Footer = ({ copyRightHolder, licenseInfo, sections }: FooterProps) => {
     return (
-        <footer className='pt-8'>
+        <footer>
             <style>{footerStyle(sections.length)}</style>
-            <div className='footer-div mx-auto max-w-fit grid gap-8'>
+            <div className='footer-div mx-auto max-w-fit grid gap-8 mb-8 sm:mb-4 2xl:mb-0'>
                 {sections.map((info, i) => (
                     <div key={i} className='mx-6 sm:mx-auto 2xl:ml-0 2xl:flex 2xl:items-baseline'>
                         <h3 className='text-base font-semibold tracking-wide 2xl:tracking-normal my-1 mr-6 -translate-x-3 sm:translate-x-0'>
