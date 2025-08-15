@@ -9,6 +9,7 @@ export interface BibItem {
     subtitle?: React.ReactNode;
     details: React.ReactNode;
     link?: string;
+    philPLink?: string;
     description?: React.ReactNode;
     year?: string;
 }
@@ -31,6 +32,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://philpapers.org/rec/PLAQVM',
+        philPLink: 'https://philpapers.org/rec/PLAQVM',
     },
     {
         title: 'Ordinal Type Theory',
@@ -40,6 +42,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2278031',
+        philPLink: 'https://philpapers.org/rec/PLAOTT',
         year: '2025',
     },
     {
@@ -50,6 +53,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://link.springer.com/article/10.1007/s11098-021-01708-y',
+        philPLink: 'https://philpapers.org/rec/PLAQPA',
         year: '2022',
     },
     {
@@ -60,6 +64,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://www.tandfonline.com/doi/full/10.1080/0020174X.2018.1446046',
+        philPLink: 'https://philpapers.org/rec/PLAIPA-2',
         year: '2018',
     },
     {
@@ -70,6 +75,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://quod.lib.umich.edu/p/phimp/3521354.0016.001/--logically-simple-properties-and-relations?view=image',
+        philPLink: 'https://philpapers.org/rec/PLALSP',
         year: '2016',
     },
     {
@@ -80,6 +86,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://www.tandfonline.com/doi/abs/10.1080/09515080701694136',
+        philPLink: 'https://philpapers.org/rec/PLAAAO',
         year: '2007',
     },
     {
@@ -100,6 +107,7 @@ export const papers: BibItem[] = [
             </>
         ),
         link: 'https://www.tandfonline.com/doi/abs/10.1080/09515080701209380',
+        philPLink: 'https://philpapers.org/rec/MOLFAB',
         year: '2007',
     },
 ];
@@ -117,6 +125,7 @@ export const reviews: BibItem[] = [
             </>
         ),
         link: 'https://onlinelibrary.wiley.com/doi/abs/10.1111/1746-8361.12239',
+        philPLink: 'https://philpapers.org/rec/PLAKBM',
         year: '2018',
     },
 ];

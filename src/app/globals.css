@@ -75,7 +75,7 @@ a:not(.menu-item):not(.logo):not(.nav-item):hover {
         white-space: nowrap;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo)::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link)::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -91,7 +91,7 @@ a:not(.menu-item):not(.logo):not(.nav-item):hover {
             opacity 0.2s ease-out;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo):hover::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):hover::after {
         opacity: 1;
         transform: scaleX(1);
     }
@@ -147,3 +147,21 @@ nav {
     -webkit-backdrop-filter: blur(10px); /* for Safari */
     backdrop-filter: blur(10px);
 }
+
+/* PhilPapers logo hover effect */
+.philpapers-link {
+    transition: transform 0.2s ease;
+    will-change: transform; /* Optimize for animations */
+}
+
+.philpapers-link:hover {
+    transform: scale(1.15);
+}
+
+/* Ensure the logo itself also has smooth transitions */
+.philpapers-link svg {
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
+
+

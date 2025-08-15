@@ -1,5 +1,6 @@
 import Content from '../components/Content';
 import Section from '../components/Section';
+import PhilPapersLogo from '../components/PhilPapersLogo';
 import { BibItem, papers, reviews } from './pubs';
 
 interface PubListProps {
@@ -62,7 +63,26 @@ const PubList = ({ pubs }: PubListProps) => {
                             )
                         </>
                     )}
-                    <div style={{ marginTop: '0.3em' }}>{pub.details}</div>
+                    <div style={{ marginTop: '0.3em' }}>
+                        {pub.details}
+                        {pub.philPLink && (
+                            <span style={{ marginLeft: '0.5em' }}>
+                                <a
+                                    href={pub.philPLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="View on PhilPapers (opens in new tab)"
+                                    className="philpapers-link"
+                                    style={{
+                                        textDecoration: 'none',
+                                        display: 'inline-block',
+                                    }}
+                                >
+                                    <PhilPapersLogo size={14} />
+                                </a>
+                            </span>
+                        )}
+                    </div>
                     <div style={{ marginTop: '0.3em' }}>{pub.year}</div>
                 </li>
             ))}
