@@ -70,7 +70,7 @@ const PubList = ({ pubs }: PubListProps) => {
                                 <a
                                     href={pub.philPLink}
                                     target='_blank'
-                                    rel='noopener noreferrer'
+                                    rel='noopener'
                                     title='View on PhilPapers (opens in new tab)'
                                     className='philpapers-link'
                                     style={{

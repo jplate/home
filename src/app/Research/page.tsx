@@ -13,7 +13,7 @@ export default function Page() {
                         <a
                             href='https://philarchive.org/rec/PLAOTT'
                             target='_blank'
-                            rel='noopener noreferrer'
+                            rel='noopener'
                         >
                             Ordinal Type Theory
                         </a>
