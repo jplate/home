@@ -10,11 +10,7 @@ export default function Page() {
                     relations, states of affairs, and other things of that ilk. In my most recent publication{' '}
                     <span className='whitespace-nowrap'>
                         (&lsquo;
-                        <a
-                            href='https://philarchive.org/rec/PLAOTT'
-                            target='_blank'
-                            rel='noopener'
-                        >
+                        <a href='https://philarchive.org/rec/PLAOTT' target='_blank' rel='noopener'>
                             Ordinal Type Theory
                         </a>
                         &rsquo;),{' '}
