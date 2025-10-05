@@ -20,11 +20,12 @@ export default function Page() {
             <Section id='intro'>
                 <p>
                     I&rsquo;m an analytic philosopher, working mainly in metaphysics and philosophical logic.
-                    I live in Lugano, where I&rsquo;ve been a postdoc at the{' '}
+                    I currently live in the village of Großenhain (Lower Saxony). Previously, until September
+                    2022, I was a postdoc at the{' '}
                     <a href='https://www.usi.ch/en' target='_blank' rel='noopener noreferrer'>
                         University of Italian Switzerland
                     </a>{' '}
-                    (USI) until September 2022.
+                    in Lugano.
                 </p>
                 <p>
                     I&rsquo;ve obtained my PhD from{' '}
