@@ -16,6 +16,14 @@ export interface BibItem {
 
 export const papers: BibItem[] = [
     {
+        title: <>Towards an Ontology of Roles and States</>,
+        details: (
+            <>
+                Forthcoming in <i>Erkenntnis</i>
+            </>
+        ),
+    },
+    {
         title: (
             <>
                 <i>Quo vadis</i>, Metaphysics of Relations?
