@@ -1,5 +1,12 @@
+import { Metadata } from 'next';
 import Content from '../components/Content';
 import Section from '../components/Section';
+
+export const metadata: Metadata = {
+    title: 'Teaching',
+    description: 'Jan Plate teaching courses in Logic, Critical Thinking, and Philosophy.',
+    keywords: ['philosophy teaching', 'logic course', 'critical thinking', 'philosophy education'],
+};
 
 export default function Page() {
     return (

@@ -1,5 +1,23 @@
+import { Metadata } from 'next';
 import Content from '../components/Content';
 import Section from '../components/Section';
+
+export const metadata: Metadata = {
+    title: 'Research',
+    description:
+        'Jan Plate researches metaphysics of intensional entities: properties, relations, states of affairs. Publications on Ordinal Type Theory, ontological roles, essence, and higher-order metaphysics.',
+    keywords: [
+        'metaphysics',
+        'ontological roles',
+        'type theory',
+        'essence',
+        'properties',
+        'relations',
+        'states of affairs',
+        'higher-order metaphysics',
+        'philosophy research',
+    ],
+};
 
 export default function Page() {
     return (

@@ -1,7 +1,24 @@
+import { Metadata } from 'next';
 import Content from '../components/Content';
 import Section from '../components/Section';
 import PhilPapersLogo from '../components/PhilPapersLogo';
 import { BibItem, papers, reviews } from './pubs';
+
+export const metadata: Metadata = {
+    title: 'Publications',
+    description:
+        "Academic publications by Jan Plate on metaphysics, type theory, essence, properties, and relations. Published in Inquiry, Philosophical Studies, Philosophers' Imprint, and other journals.",
+    keywords: [
+        'academic publications',
+        'philosophy papers',
+        'metaphysics publications',
+        'Jan Plate publications',
+        'type theory',
+        'essence',
+        'properties',
+        'relations',
+    ],
+};
 
 interface PubListProps {
     pubs: BibItem[];
@@ -91,14 +108,40 @@ const PubList = ({ pubs }: PubListProps) => {
 };
 
 export default function Page() {
+    const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Publications by Jan Plate',
+        description:
+            'Academic publications by Jan Plate on metaphysics, type theory, essence, properties, and relations.',
+        mainEntity: {
+            '@type': 'Person',
+            name: 'Jan Plate',
+            jobTitle: 'Analytic Philosopher',
+        },
+        publisher: {
+            '@type': 'Person',
+            name: 'Jan Plate',
+            url: 'https://jplate.github.io',
+        },
+        keywords:
+            'metaphysics, type theory, essence, properties, relations, ontology, philosophy, analytic philosophy',
+    };
+
     return (
-        <Content>
-            <Section id='papers' header='Journal articles'>
-                <PubList pubs={papers} />
-            </Section>
-            <Section id='reviews' header='Book reviews'>
-                <PubList pubs={reviews} />
-            </Section>
-        </Content>
+        <>
+            <script
+                type='application/ld+json'
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
+            <Content>
+                <Section id='papers' header='Journal articles'>
+                    <PubList pubs={papers} />
+                </Section>
+                <Section id='reviews' header='Book reviews'>
+                    <PubList pubs={reviews} />
+                </Section>
+            </Content>
+        </>
     );
 }
