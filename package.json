@@ -6,7 +6,7 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "deploy": "next build && next export && npx gh-pages -d out",
         "format": "prettier --write ."
     },
@@ -15,20 +15,24 @@
         "@tailwindcss/typography": "^0.5.15",
         "autoprefixer": "^10.4.20",
         "clsx": "^2.1.1",
-        "next": "15.1.5",
-        "react": "19.0.0",
-        "react-dom": "19.0.0",
+        "next": "16.0.1",
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
         "sharp": "^0.33.5"
     },
     "devDependencies": {
+        "@eslint/compat": "^1.4.1",
+        "@eslint/eslintrc": "^3.3.1",
+        "@eslint/js": "^9.39.0",
         "@types/node": "^20",
-        "@types/react": "19.0.7",
-        "@types/react-dom": "19.0.3",
-        "eslint": "^8",
-        "eslint-config-next": "15.1.5",
+        "@types/react": "19.2.2",
+        "@types/react-dom": "19.2.2",
+        "eslint": "^9.39.0",
+        "eslint-config-next": "16.0.1",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
         "gh-pages": "^6.2.0",
+        "globals": "^16.5.0",
         "postcss": "^8.4.47",
         "prettier": "^3.3.3",
         "tailwindcss": "^3.4.13",
@@ -36,7 +40,7 @@
     },
     "homepage": "https://jplate.github.io/home",
     "overrides": {
-        "@types/react": "19.0.7",
-        "@types/react-dom": "19.0.3"
+        "@types/react": "19.2.2",
+        "@types/react-dom": "19.2.2"
     }
 }
