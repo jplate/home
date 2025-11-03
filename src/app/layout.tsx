@@ -29,9 +29,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <head>
-                <link rel='preload' href='/images/20241127_210709 (bw lores).jpg' as='image' />
-            </head>
             <body className={` ${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
         </html>
     );
