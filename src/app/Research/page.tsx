@@ -35,7 +35,7 @@ export default function Page() {
                     context of higher-order metaphysics. I build on this in my forthcoming{' '}
                     <span className='whitespace-nowrap'>
                         &lsquo;
-                        <a href='https://philarchive.org/rec/PLAOTT' target='_blank' rel='noopener'>
+                        <a href='https://philarchive.org/rec/PLATAO-12' target='_blank' rel='noopener'>
                             Towards an Ontology of Roles and States
                         </a>
                         &rsquo;,{' '}
