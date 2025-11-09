@@ -8,32 +8,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: baseUrl,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 1.0,
         },
         {
             url: `${baseUrl}/Home`,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 1.0,
         },
         {
             url: `${baseUrl}/Research`,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/Publications`,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/Teaching`,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/WebDev`,
-            changeFrequency: 'yearly',
+            changeFrequency: 'monthly',
             priority: 0.7,
         },
     ];
