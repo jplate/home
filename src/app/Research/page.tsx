@@ -5,17 +5,17 @@ import Section from '../components/Section';
 export const metadata: Metadata = {
     title: 'Research',
     description:
-        'Jan Plate researches metaphysics of intensional entities: properties, relations, states of affairs. Publications on Ordinal Type Theory, ontological roles, essence, and higher-order metaphysics.',
+        'Jan Plate researches metaphysics of intensional entities: properties, relations, states of affairs, etc. Author of "Ordinal Type Theory", "Towards an Ontology of Roles and States", and other publications in analytic metaphysics and philosophical psychology.',
     keywords: [
         'metaphysics',
-        'ontological roles',
+        'relational roles',
         'type theory',
         'essence',
         'properties',
         'relations',
         'states of affairs',
         'higher-order metaphysics',
-        'philosophy research',
+        'facts',
     ],
 };
 
@@ -25,46 +25,24 @@ export default function Page() {
             <Section id='intro'>
                 <p>
                     My research generally focuses on the metaphysics of intensional entities: properties,
-                    relations, states of affairs, and other things of that ilk. In my most recent publication{' '}
+                    relations, states of affairs, and other things of that ilk. In a recent{' '}
                     <span className='whitespace-nowrap'>
-                        (&lsquo;
                         <a href='https://philarchive.org/rec/PLAOTT' target='_blank' rel='noopener'>
-                            Ordinal Type Theory
+                            paper
                         </a>
-                        &rsquo;),{' '}
-                    </span>
-                    I develop an alternative to the &lsquo;Simple Theory of Types&rsquo; that is commonly used
-                    in the context of higher-order metaphysics. In the same paper, I express skepticism not
-                    only about Simple Type Theory, but also about:
-                </p>
-                <ul>
-                    <li>plural logic (fn. 62) and</li>
-                    <li>the topic-neutral concept of parthood (§6.2).</li>
-                </ul>
-                <p>In work that is currently unpublished, I defend:</p>
-                <ul>
-                    <li>a conception of relations as sets of sequences of &lsquo;roles&rsquo; and</li>
-                    <li>
-                        the thesis that fundamentality (as understood in the context of OTT) is itself a
-                        fundamental property.
-                    </li>
-                </ul>
-                <p>
-                    I further propose that sets are a special case of properties (or can be profitably{' '}
-                    <i>replaced</i> with properties, as suggested by van Inwagen in chapter&nbsp;6 of his{' '}
+                    </span>{' '}
+                    I develop an alternative to the Simple Theory of Types that is commonly used in the
+                    context of higher-order metaphysics. I build on this in my forthcoming{' '}
                     <span className='whitespace-nowrap'>
-                        <a
-                            href='https://global.oup.com/academic/product/being-9780192883964'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            recent book
+                        &lsquo;
+                        <a href='https://philarchive.org/rec/PLAOTT' target='_blank' rel='noopener'>
+                            Towards an Ontology of Roles and States
                         </a>
+                        &rsquo;,{' '}
                     </span>
-                    ) and that properties are a special case of roles. This brings into view an ontology that
-                    is&mdash;at least in my eyes&mdash;attractively elegant: there are no
-                    &lsquo;abstract&rsquo; objects other than states of affairs and roles; and likewise, there
-                    are no &lsquo;complex&rsquo; entities other than states of affairs and roles.
+                    in which I propose a conception of relations as <em>sets of role sequences</em>. The
+                    tentative upshot is an ontology in which there are no &lsquo;complex&rsquo; entities other
+                    than states of affairs and roles.
                 </p>
             </Section>
         </Content>

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        minimumCacheTTL: 1000,
+        minimumCacheTTL: 20000,
     },
 };
 

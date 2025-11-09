@@ -2,16 +2,16 @@
 import Content from '../components/Content';
 import Image from 'next/image';
 import Section from '../components/Section';
-import portraitSrc from '../images/20241127_210709 (bw).jpg';
+import portraitSrc from '../images/20251105_300.jpg';
 
 export default function Page() {
     const structuredData = {
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: 'Jan Plate',
-        jobTitle: 'Analytic Philosopher',
+        jobTitle: 'Analytic Metaphysician',
         description:
-            'Analytic philosopher working in metaphysics and philosophical logic. Research in essence, types, relations, and higher-order metaphysics.',
+            'Analytic philosopher working in metaphysics and philosophical logic. Research in essence, properties, relations, and higher-order metaphysics.',
         alumniOf: {
             '@type': 'Organization',
             name: 'Washington University in St. Louis',
@@ -29,6 +29,7 @@ export default function Page() {
             'Higher-Order Metaphysics',
             'Relations',
             'States of Affairs',
+            'Facts',
         ],
         image: 'https://jplate.github.io/icon.svg',
     };

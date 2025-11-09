@@ -42,21 +42,34 @@ const PubList = ({ pubs }: PubListProps) => {
                         paddingLeft: '1em',
                     }}
                 >
-                    <div style={{ fontWeight: 'bold' }}>
+                    <div className='font-bold'>
                         {pub.link ? (
-                            <a
-                                href={pub.link}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                style={{ fontWeight: 'bold' }}
-                            >
+                            <a href={pub.link} target='_blank' rel='noopener noreferrer'>
                                 {pub.title}
                             </a>
                         ) : (
                             pub.title
                         )}
+                        {pub.philPLink && (
+                            <span style={{ marginLeft: '0.5em' }}>
+                                <a
+                                    href={pub.philPLink}
+                                    target='_blank'
+                                    rel='noopener'
+                                    title='View on PhilPapers (opens in new tab)'
+                                    className='philpapers-link'
+                                    style={{
+                                        textDecoration: 'none',
+                                        display: 'inline-block',
+                                    }}
+                                >
+                                    <PhilPapersLogo size={14} />
+                                </a>
+                            </span>
+                        )}
                     </div>
                     {pub.subtitle}
+                    {pub.description && <p className='mt-0 mb-0 text-sm'>{pub.description}</p>}
                     {pub.coauthors && (
                         <>
                             (with{' '}
@@ -80,27 +93,9 @@ const PubList = ({ pubs }: PubListProps) => {
                             )
                         </>
                     )}
-                    <div style={{ marginTop: '0.3em' }}>
-                        {pub.details}
-                        {pub.philPLink && (
-                            <span style={{ marginLeft: '0.5em' }}>
-                                <a
-                                    href={pub.philPLink}
-                                    target='_blank'
-                                    rel='noopener'
-                                    title='View on PhilPapers (opens in new tab)'
-                                    className='philpapers-link'
-                                    style={{
-                                        textDecoration: 'none',
-                                        display: 'inline-block',
-                                    }}
-                                >
-                                    <PhilPapersLogo size={14} />
-                                </a>
-                            </span>
-                        )}
-                    </div>
-                    <div style={{ marginTop: '0.3em' }}>{pub.year}</div>
+                    <div className='mt-1.5'>{pub.details}</div>
+                    {pub.doi && <div className='-mt-0.5 text-xs'>DOI: {pub.doi}</div>}
+                    <div className='mt-1.5'>{pub.year}</div>
                 </li>
             ))}
         </ol>

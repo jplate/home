@@ -109,7 +109,10 @@ const Navbar = ({ brandName, items }: NavbarProps) => {
                 </div>
                 <div className='md:hidden'>
                     <Menu>
-                        <MenuButton className={clsx('w-full px-2 py-1 mb-2', menuButtonClassName)}>
+                        <MenuButton
+                            className={clsx('w-full px-2 py-1 mb-2', menuButtonClassName)}
+                            title='Menu button'
+                        >
                             <div className='flex-1 text-left'>
                                 <svg /* The 'hamburger' icon */
                                     xmlns='http://www.w3.org/2000/svg'
