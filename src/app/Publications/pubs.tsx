@@ -83,6 +83,12 @@ export const papers: BibItem[] = [
                 Introduction to a Special Issue of <i>Dialectica</i> on the Metaphysics of Relational States
             </>
         ),
+        description: (
+            <>
+                Provides an overview of some problems in the metaphysics of relational states, mainly from a
+                positionalistic perspective.
+            </>
+        ),
         details: (
             <>
                 <i>Dialectica</i> <b>76</b>: 163&ndash;196
