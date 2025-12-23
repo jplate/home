@@ -52,26 +52,6 @@ export const papers: BibItem[] = [
         doi: '10.1007/s10670-025-01036-1',
     },
     {
-        title: (
-            <>
-                <i>Quo vadis</i>, Metaphysics of Relations?
-            </>
-        ),
-        subtitle: (
-            <>
-                Introduction to a Special Issue of <i>Dialectica</i> on the Metaphysics of Relational States
-            </>
-        ),
-        details: (
-            <>
-                Forthcoming in <i>Dialectica</i>
-            </>
-        ),
-        link: 'https://philpapers.org/rec/PLAQVM',
-        philPLink: 'https://philpapers.org/rec/PLAQVM',
-        doi: '10.48106/dial.v76.i2.01',
-    },
-    {
         title: 'Ordinal Type Theory',
         description: (
             <>
@@ -91,6 +71,27 @@ export const papers: BibItem[] = [
         philPLink: 'https://philpapers.org/rec/PLAOTT',
         year: '2025',
         doi: '10.1080/0020174x.2023.2278031',
+    },
+    {
+        title: (
+            <>
+                <i>Quo vadis</i>, Metaphysics of Relations?
+            </>
+        ),
+        subtitle: (
+            <>
+                Introduction to a Special Issue of <i>Dialectica</i> on the Metaphysics of Relational States
+            </>
+        ),
+        details: (
+            <>
+                <i>Dialectica</i> <b>76</b>: 163&ndash;196
+            </>
+        ),
+        link: 'https://www.philosophie.ch/plate-2022',
+        philPLink: 'https://philpapers.org/rec/PLAQVM',
+        year: '2022',
+        doi: '10.48106/dial.v76.i2.01',
     },
     {
         title: 'Qualitative Properties and Relations',
