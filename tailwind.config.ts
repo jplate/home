@@ -21,15 +21,21 @@ const config: Config = {
                 btnactivebg: 'rgba(var(--btnactivebg))',
                 btnactivecolor: 'rgba(var(--btnactivecolor))',
             },
-            typography: {
+            typography: ({ theme }: { theme: any }) => ({
                 DEFAULT: {
                     css: {
+                        '--tw-prose-body': 'var(--prose-body)',
+                        '--tw-prose-headings': 'var(--prose-headings)',
+                        '--tw-prose-links': 'var(--links)',
+                        '--tw-prose-bold': 'var(--prose-bold)',
+                        '--tw-prose-counters': 'var(--prose-counters)',
+                        '--tw-prose-bullets': 'var(--prose-bullets)',
                         a: {
                             textDecoration: 'none',
                         },
                     },
                 },
-            },
+            }),
         },
     },
     plugins: [typography],

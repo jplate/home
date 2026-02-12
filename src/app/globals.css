@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
+    --background: #fafafa;
     --foreground: #171717;
     --logocolor: #1f2937; /* gray-800 */
 
@@ -14,21 +14,38 @@
     --btnhovercolor: 255, 255, 255;
     --btnactivebg: 243, 244, 246; /* gray-100 */
     --btnactivecolor: 3, 7, 18; /* gray-950 */
+    --links: #171717;
+
+    /* Typography colors (light scheme by default) */
+    --prose-body: #171717;
+    --prose-headings: #171717;
+    --prose-bold: #171717;
+    --prose-counters: #171717;
+    --prose-bullets: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #0a0a0a;
-        --foreground: #ededed;
+        --foreground: #ddd;
         --logocolor: #e5e7eb;
 
         --btnbg: 3, 7, 18; /* gray-950 */
         --btncolor: 156, 163, 175; /* gray-400 */
-        --btnborder: 0, 0, 0;
+        --btnborder: oklch(27.8% 0.033 256.848); /* gray-800 */
         --btnhoverbg: 156, 163, 175; /* gray-400 */
         --btnhovercolor: 0, 0, 0;
         --btnactivebg: 3, 7, 18; /* gray-950 */
         --btnactivecolor: 243, 244, 246; /* gray-100 */
+        --links: #a3afd3; /* links are in light blue rather than light gray, because boldface alone is somehow not very effective at distinguishing the links from the 
+                surrounding text when the text is in a light color on a dark background. */
+
+        /* Typography colors for the alternate scheme */
+        --prose-body: #ddd;
+        --prose-headings: #ddd;
+        --prose-bold: #ddd;
+        --prose-counters: #ddd;
+        --prose-bullets: #ddd;
     }
 }
 
@@ -53,22 +70,12 @@ body {
     }
 }
 
-a:not(.menu-item):not(.logo) {
-    color: var(--foreground);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-a:not(.menu-item):not(.logo):not(.nav-item):hover {
-    text-decoration: underline;
-}
-
+/* For links, I'd like to use a 'fancy' hover effect that produces an animated line. Since this effect only really works if the link in 
+    question does not wrap around a line break, we're imposing a 'white-space: nowrap' directive. However, this policy is 
+    suboptimal for smaller screens, and so we reserve the effect for bigger ones. */
 @media (min-width: 1024px) {
-    /* I'd like to use a 'fancy' hover effect that produces an animated line. Since this effect only really works if the link in 
-        question does not wrap around a line break, we're imposing a 'white-space: nowrap' directive. However, this policy is 
-        suboptimal for smaller screens, and so we reserve the effect for bigger ones. */
-    a:not(.menu-item):not(.logo) {
-        color: var(--foreground);
+    a:not(.menu-item):not(.logo):not(.nav-item) {
+        color: var(--links);
         font-weight: 600;
         text-decoration: none !important;
         position: relative;
@@ -82,7 +89,7 @@ a:not(.menu-item):not(.logo):not(.nav-item):hover {
         height: 1px;
         bottom: 0;
         left: 0;
-        background-color: var(--foreground);
+        background-color: var(--links);
         opacity: 0;
         transform: scaleX(0);
         transform-origin: bottom left;
@@ -95,29 +102,47 @@ a:not(.menu-item):not(.logo):not(.nav-item):hover {
         opacity: 1;
         transform: scaleX(1);
     }
+}
 
-    /* For the nav-items, we have to add a translation effect that connects the hover effect with the more permanent border-effect.
-       (The latter is handled by a conditionally applied tailwind class in NavItemComp.) */
-    a.nav-item:not(.menu-item):not(.logo)::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: var(--foreground);
-        opacity: 0;
-        transform: translateY(1px) scaleX(0);
-        transform-origin: bottom left;
-        transition:
-            transform 0.2s ease-out,
-            opacity 0.2s ease-out;
-    }
+/* For the nav-items, we have to add a translation effect that connects the hover effect with the more permanent border-effect.
+   (The latter is handled by a conditionally applied tailwind class in NavItemComp.) */
+a.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--foreground);
+    opacity: 0;
+    transform: translateY(1px) scaleX(0);
+    transform-origin: bottom left;
+    transition:
+        transform 0.2s ease-out,
+        opacity 0.2s ease-out;
+}
 
-    a.nav-item:not(.menu-item):not(.logo):hover::after {
-        opacity: 1;
-        transform: translateY(1px) scaleX(1);
-    }
+a.nav-item:hover::after {
+    opacity: 1;
+    transform: translateY(1px) scaleX(1);
+}
+
+a.nav-item {
+    position: relative;
+    color: var(--foreground);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* 'Normal' links */
+a:not(.menu-item):not(.logo):not(.nav-item) {
+    color: var(--links);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:not(.menu-item):not(.logo):not(.nav-item):hover {
+    text-decoration: underline;
 }
 
 h2 {
