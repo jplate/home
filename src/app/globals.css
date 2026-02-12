@@ -3,10 +3,18 @@
 @tailwind utilities;
 
 :root {
+    /* The following variables are used in tailwind.config.ts and elsewhere. */
     --background: #fafafa;
     --foreground: #171717;
     --logocolor: #1f2937; /* gray-800 */
+    --links: #171717;
+    --prose-body: #171717;
+    --prose-headings: #171717;
+    --prose-bold: #171717;
+    --prose-counters: #171717;
+    --prose-bullets: #171717;
 
+    /* The following are RGB strings for use in tailwind-class specifications (which may add alpha values). */
     --btnbg: 243, 244, 246; /* gray-100 */
     --btncolor: 3, 7, 18; /* gray-950 */
     --btnborder: 229, 231, 235; /* gray-200 */
@@ -14,14 +22,6 @@
     --btnhovercolor: 255, 255, 255;
     --btnactivebg: 243, 244, 246; /* gray-100 */
     --btnactivecolor: 3, 7, 18; /* gray-950 */
-    --links: #171717;
-
-    /* Typography colors (light scheme by default) */
-    --prose-body: #171717;
-    --prose-headings: #171717;
-    --prose-bold: #171717;
-    --prose-counters: #171717;
-    --prose-bullets: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,23 +29,21 @@
         --background: #0a0a0a;
         --foreground: #ddd;
         --logocolor: #e5e7eb;
-
-        --btnbg: 3, 7, 18; /* gray-950 */
-        --btncolor: 156, 163, 175; /* gray-400 */
-        --btnborder: oklch(27.8% 0.033 256.848); /* gray-800 */
-        --btnhoverbg: 156, 163, 175; /* gray-400 */
-        --btnhovercolor: 0, 0, 0;
-        --btnactivebg: 3, 7, 18; /* gray-950 */
-        --btnactivecolor: 243, 244, 246; /* gray-100 */
-        --links: #a3afd3; /* links are in light blue rather than light gray, because boldface alone is somehow not very effective at distinguishing the links from the 
-                surrounding text when the text is in a light color on a dark background. */
-
-        /* Typography colors for the alternate scheme */
+        --links: #a3afd3; /* links in darkmode are in light blue rather than light gray, because boldface alone is somehow not very effective at 
+                distinguishing the links from the surrounding text when the text is in a light color on a dark background. */
         --prose-body: #ddd;
         --prose-headings: #ddd;
         --prose-bold: #ddd;
         --prose-counters: #ddd;
         --prose-bullets: #ddd;
+
+        --btnbg: 3, 7, 18; /* gray-950 */
+        --btncolor: 156, 163, 175; /* gray-400 */
+        --btnborder: 30, 41, 57; /* gray-800 */
+        --btnhoverbg: 156, 163, 175; /* gray-400 */
+        --btnhovercolor: 0, 0, 0;
+        --btnactivebg: 3, 7, 18; /* gray-950 */
+        --btnactivecolor: 243, 244, 246; /* gray-100 */
     }
 }
 

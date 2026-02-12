@@ -45,9 +45,9 @@ export default function Page() {
                     <Image
                         src={portraitSrc}
                         alt='Jan Plate, analytic philosopher specializing in metaphysics and philosophical logic'
+                        className={'rounded-xl border border-btnborder'}
                         width={180}
-                        style={{ borderRadius: '1rem', border: '1px solid #fff' }}
-                        placeholder='blur'
+                        placeholder={'blur'}
                         priority
                     />
                 </div>
