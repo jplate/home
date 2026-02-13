@@ -45,7 +45,8 @@ export default function Page() {
                 <div className='hidden md:flex justify-center mb-9 min-h-[300px]'>
                     <Image
                         src={diagramSrc}
-                        alt='An ontology of roles and states (and particulars)'
+                        alt={'An ontology of roles and states (and particulars)'}
+                        className={'rounded-xl'}
                         width={500}
                         placeholder='blur'
                         priority
