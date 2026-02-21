@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "deploy": "next build && next export && npx gh-pages -d out",
+        "deploy": "next build && npx gh-pages -d out",
         "format": "prettier --write ."
     },
     "dependencies": {

@@ -19,6 +19,9 @@ export const metadata: Metadata = {
         'higher-order metaphysics',
         'facts',
     ],
+    alternates: {
+        canonical: 'https://jplate.github.io/home/Research',
+    },
 };
 
 export default function Page() {

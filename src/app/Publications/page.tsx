@@ -18,6 +18,9 @@ export const metadata: Metadata = {
         'properties',
         'relations',
     ],
+    alternates: {
+        canonical: 'https://jplate.github.io/home/Publications',
+    },
 };
 
 interface PubListProps {

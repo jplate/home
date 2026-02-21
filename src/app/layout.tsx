@@ -39,14 +39,11 @@ export const metadata: Metadata = {
     authors: [{ name: 'Jan Plate' }],
     creator: 'Jan Plate',
     publisher: 'Jan Plate',
-    metadataBase: new URL('https://jplate.github.io'),
-    alternates: {
-        canonical: '/',
-    },
+    metadataBase: new URL('https://jplate.github.io/home'),
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://jplate.github.io',
+        url: 'https://jplate.github.io/home',
         siteName: 'Jan Plate Philosophy',
         title: 'Jan Plate - Analytic Philosopher',
         description:

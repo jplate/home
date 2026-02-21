@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Web Development',
     description: 'Jan Plate web development projects including diagram editor and TeXdraw code generator.',
     keywords: ['web development', 'diagram editor', 'TeXdraw', 'philosopher web developer'],
+    alternates: {
+        canonical: 'https://jplate.github.io/home/WebDev',
+    },
 };
 
 export default function Page() {

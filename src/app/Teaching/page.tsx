@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     title: 'Teaching',
     description: 'Jan Plate teaching courses in Logic, Critical Thinking, and Philosophy.',
     keywords: ['philosophy teaching', 'logic course', 'critical thinking', 'philosophy education'],
+    alternates: {
+        canonical: 'https://jplate.github.io/home/Teaching',
+    },
 };
 
 export default function Page() {
