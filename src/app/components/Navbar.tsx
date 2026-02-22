@@ -12,7 +12,7 @@ Unresolved issue: Somehow the use of this navbar causes next.js to attempt to fe
 
 const menuButtonClassName = clsx(
     'inline-flex items-center rounded-md bg-btnbg/85 text-sm text-btncolor border border-btnborder',
-    'focus:outline-none data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
+    'focus:outline-hidden data-[hover]:bg-btnhoverbg data-[hover]:text-btnhovercolor data-[open]:bg-btnhoverbg data-[open]:text-btnhovercolor',
     'data-[focus]:outline-1 data-[focus]:outline-btnhoverbg transition-colors duration-300'
 );
 
