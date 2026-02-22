@@ -59,7 +59,7 @@ export const metadata: Metadata = {
         card: 'summary',
         title: 'Jan Plate - Analytic Philosopher',
         description:
-            'Analytic philosopher working in metaphysics and philosophical logic. PhD from Washington University in St. Louis.',
+            'Analytic philosopher working in metaphysics and philosophical logic. PhD 2012 from Washington University in St. Louis.',
         images: ['/icon.svg'],
     },
     robots: {
