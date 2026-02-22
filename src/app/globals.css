@@ -1,8 +1,21 @@
 @import 'tailwindcss';
-@config '../../tailwind.config.ts';
+@plugin '@tailwindcss/typography';
+@source "../**/*.{js,ts,jsx,tsx}";
+
+@theme {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-btnbg: rgb(var(--btnbg));
+    --color-btncolor: rgb(var(--btncolor));
+    --color-btnborder: rgb(var(--btnborder));
+    --color-btnhoverbg: rgb(var(--btnhoverbg));
+    --color-btnhovercolor: rgb(var(--btnhovercolor));
+    --color-btnactivebg: rgb(var(--btnactivebg));
+    --color-btnactivecolor: rgb(var(--btnactivecolor));
+}
 
 :root {
-    /* The following variables are used in tailwind.config.ts and elsewhere. */
+    /* Theme and prose variables (used by Tailwind utilities and typography plugin). */
     --background: #fafafa;
     --foreground: #171717;
     --logocolor: #1f2937; /* gray-800 */
@@ -12,7 +25,6 @@
     --prose-bold: #171717;
     --prose-counters: #171717;
     --prose-bullets: #171717;
-
     /* The following are RGB strings for use in tailwind-class specifications (which may add alpha values). */
     --btnbg: 243, 244, 246; /* gray-100 */
     --btncolor: 3, 7, 18; /* gray-950 */
@@ -59,6 +71,16 @@ body {
 ::selection {
     background-color: #b3d4fc;
     color: #000; /* black text */
+}
+
+/* Override typography plugin to use our foreground colors (plugin defaults override :root). */
+.prose {
+    --tw-prose-body: var(--prose-body);
+    --tw-prose-headings: var(--prose-headings);
+    --tw-prose-links: var(--links);
+    --tw-prose-bold: var(--prose-bold);
+    --tw-prose-counters: var(--prose-counters);
+    --tw-prose-bullets: var(--prose-bullets);
 }
 
 @layer utilities {
