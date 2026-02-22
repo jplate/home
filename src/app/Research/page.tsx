@@ -49,7 +49,7 @@ export default function Page() {
                     <Image
                         src={diagramSrc}
                         alt={'An ontology of roles and states (and particulars)'}
-                        className={'rounded-xl'}
+                        className='rounded-xl dark:opacity-[0.8] dark:invert'
                         width={500}
                         placeholder='blur'
                         priority
