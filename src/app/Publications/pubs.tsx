@@ -48,6 +48,7 @@ export const papers: BibItem[] = [
                 for a visually more interesting version.)
             </>
         ),
+        link: 'https://link.springer.com/article/10.1007/s10670-025-01036-1',
         philPLink: 'https://philpapers.org/rec/PLATAO-12',
         doi: '10.1007/s10670-025-01036-1',
     },
