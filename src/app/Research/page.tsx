@@ -63,7 +63,7 @@ export default function Page() {
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        <i>Claude Fable 5</i>
+                        <i className='pr-[0.12em]'>Claude Fable 5</i>
                     </a>{' '}
                     in June 2026:
                 </p>
