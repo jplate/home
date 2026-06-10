@@ -71,7 +71,7 @@ export default function Page() {
                     href='https://claude.ai/public/artifacts/ce067905-f6f1-4b53-9059-318ec5e1a796'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='card-link not-prose block border border-btnborder rounded-md p-4 my-6 bg-btnbg hover:bg-gray-200/50 hover:border-gray-300 dark:hover:bg-white/5 dark:hover:border-gray-700 transition-colors duration-100 whitespace-normal no-underline'
+                    className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-gray-200/50 hover:border-gray-300 dark:hover:bg-white/5 dark:hover:border-gray-700 transition-colors duration-100 whitespace-normal no-underline'
                 >
                     <span className='block font-mono text-xs uppercase tracking-widest opacity-60'>
                         Interactive
