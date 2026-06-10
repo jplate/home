@@ -93,7 +93,7 @@ body {
     question does not wrap around a line break, we're imposing a 'white-space: nowrap' directive. However, this policy is 
     suboptimal for smaller screens, and so we reserve the effect for bigger ones. */
 @media (min-width: 1024px) {
-    a:not(.menu-item):not(.logo):not(.nav-item) {
+    a:not(.menu-item):not(.logo):not(.nav-item):not(.card-link) {
         color: var(--links);
         font-weight: 600;
         text-decoration: none !important;
@@ -101,7 +101,7 @@ body {
         white-space: nowrap;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link)::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.card-link)::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -117,7 +117,7 @@ body {
             opacity 0.2s ease-out;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):hover::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.card-link):hover::after {
         opacity: 1;
         transform: scaleX(1);
     }
@@ -160,7 +160,7 @@ a:not(.menu-item):not(.logo):not(.nav-item) {
     text-decoration: none;
 }
 
-a:not(.menu-item):not(.logo):not(.nav-item):hover {
+a:not(.menu-item):not(.logo):not(.nav-item):not(.card-link):hover {
     text-decoration: underline;
 }
 

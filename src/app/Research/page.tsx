@@ -55,6 +55,35 @@ export default function Page() {
                         priority
                     />
                 </div>
+                <p>
+                    In case you&rsquo;d like an interactive approach to my published work in metaphysics, here
+                    is a &lsquo;shared artifact&rsquo; that I made with{' '}
+                    <a
+                        href='https://www.anthropic.com/news/claude-fable-5-mythos-5'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <i>Claude Fable 5</i>
+                    </a>{' '}
+                    in June 2026:
+                </p>
+                <a
+                    href='https://claude.ai/public/artifacts/ce067905-f6f1-4b53-9059-318ec5e1a796'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='card-link not-prose block border border-btnborder rounded-md p-4 my-6 bg-btnbg hover:bg-gray-200/50 hover:border-gray-300 dark:hover:bg-white/5 dark:hover:border-gray-700 transition-colors duration-100 whitespace-normal no-underline'
+                >
+                    <span className='block font-mono text-xs uppercase tracking-widest opacity-60'>
+                        Interactive
+                    </span>
+                    <span className='block font-bold mt-1'>
+                        Properties &amp; Relations — ask my papers anything
+                    </span>
+                    <span className='block mt-2 text-sm font-normal opacity-80'>
+                        An AI reading companion grounded in the full text of six papers. Opens on claude.ai; a
+                        free Claude account is required.
+                    </span>
+                </a>
             </Section>
         </Content>
     );
