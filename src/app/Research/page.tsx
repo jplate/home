@@ -127,7 +127,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Logically Simple Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Philosophers' Imprint</i> (2016)
+                                <i className='pr-[0.12em]'>Philosophers&rsquo; Imprint</i> (2016)
                             </td>
                         </tr>
                         <tr>
