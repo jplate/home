@@ -17,9 +17,15 @@ const texText = (s: string) =>
         .replace(/'/g, '’');
 
 const renderTextSegment = (s: string) =>
-    s
-        .split(/\\(?:emph|textit)\{([^}]*)\}/g)
-        .map((part, i) => (i % 2 === 1 ? <i key={i} className='pr-[0.12em]'>{texText(part)}</i> : texText(part)));
+    s.split(/\\(?:emph|textit)\{([^}]*)\}/g).map((part, i) =>
+        i % 2 === 1 ? (
+            <i key={i} className='pr-[0.12em]'>
+                {texText(part)}
+            </i>
+        ) : (
+            texText(part)
+        )
+    );
 
 const renderAbstract = (s: string) =>
     s.split(/\$([^$]*)\$/g).map((part, i) =>

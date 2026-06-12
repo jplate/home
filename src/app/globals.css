@@ -167,12 +167,12 @@ a:not(.menu-item):not(.logo):not(.nav-item):not(.card-link):hover {
 
 h1 {
     text-transform: uppercase;
-    letter-spacing: 0.025em; 
+    letter-spacing: 0.025em;
 }
 
 h2 {
     text-transform: uppercase;
-    letter-spacing: 0.025em; 
+    letter-spacing: 0.025em;
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--foreground);
@@ -183,7 +183,7 @@ h2 {
 }
 
 h3 {
-    letter-spacing: 0.025em; 
+    letter-spacing: 0.025em;
 }
 
 nav {
