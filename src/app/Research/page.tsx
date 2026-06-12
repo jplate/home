@@ -127,7 +127,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Logically Simple Properties and Relations&rsquo;,{' '}
-                                <i>Philosophers' Imprint</i> (2016)
+                                <i className='pr-[0.12em]'>Philosophers' Imprint</i> (2016)
                             </td>
                         </tr>
                         <tr>
@@ -135,7 +135,8 @@ export default function Page() {
                                 <IPR />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Intrinsic Properties and Relations&rsquo;, <i>Inquiry</i> (2018)
+                                &lsquo;Intrinsic Properties and Relations&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Inquiry</i> (2018)
                             </td>
                         </tr>
                         <tr>
@@ -144,7 +145,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Qualitative Properties and Relations&rsquo;,{' '}
-                                <i>Philosophical Studies</i> (2022)
+                                <i className='pr-[0.12em]'>Philosophical Studies</i> (2022)
                             </td>
                         </tr>
                         <tr>
@@ -152,8 +153,9 @@ export default function Page() {
                                 <QVMR />
                             </td>
                             <td className='py-1'>
-                                &lsquo;<i>Quo Vadis</i>, Metaphysics of Relations?&rsquo;, <i>Dialectica</i>{' '}
-                                (2022; introduction to a special issue)
+                                &lsquo;<i>Quo Vadis</i>, Metaphysics of Relations?&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Dialectica</i> (2022; introduction to a special
+                                issue)
                             </td>
                         </tr>
                         <tr>
@@ -161,7 +163,8 @@ export default function Page() {
                                 <OTT />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Ordinal Type Theory&rsquo;, <i>Inquiry</i> (2025)
+                                &lsquo;Ordinal Type Theory&rsquo;, <i className='pr-[0.12em]'>Inquiry</i>{' '}
+                                (2025)
                             </td>
                         </tr>
                         <tr>
@@ -169,8 +172,8 @@ export default function Page() {
                                 <TORS />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Towards an Ontology of Roles and States&rsquo;, <i>Erkenntnis</i>{' '}
-                                (forthcoming; published online 2026)
+                                &lsquo;Towards an Ontology of Roles and States&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Erkenntnis</i> (forthcoming; published online 2026)
                             </td>
                         </tr>
                     </tbody>
