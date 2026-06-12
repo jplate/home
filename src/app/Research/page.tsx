@@ -177,10 +177,11 @@ export default function Page() {
                 </table>
                 <p>
                     There are two main strands running through most of these papers: first, the search for a
-                    satisfactory theory of <i>intensional entities</i> (i.e., of properties, relations, and
-                    states of affairs) that can serve as a framework for further theorizing, metaphysical or
-                    otherwise; and second, the attempt to analyze certain concepts of metaphysical interest,
-                    in particular ones applicable to intensional entities. Both strands trace back to my{' '}
+                    satisfactory theory of <i className='pr-[0.12em]'>intensional entities</i> (i.e., of
+                    properties, relations, and states of affairs) that can serve as a framework for further
+                    theorizing, metaphysical or otherwise; and second, the attempt to analyze certain concepts
+                    of metaphysical interest, in particular ones applicable to intensional entities. Both
+                    strands trace back to my{' '}
                     <a
                         href='https://openscholarship.wustl.edu/etd/1017/'
                         target='_blank'
@@ -192,26 +193,28 @@ export default function Page() {
                 </p>
                 <p>
                     <LSPR /> presents a framework similar to the one used in that thesis, and the main idea
-                    behind its analysis of the concept of a <i>logically simple property or relation</i> is
-                    also already present there. <IPR /> applies the same basic idea to the problem of
-                    analyzing the concept of <i>intrinsicality</i>, and uses essentially the same framework.
-                    However, it runs into certain problems (see in particular §6.3 of that paper), which
-                    already point in the direction of an approach that employs a &lsquo;genuinely
-                    metaphysical&rsquo; notion (and not just &lsquo;broadly logical&rsquo; notions in addition
-                    to a concept of parthood).
+                    behind its analysis of the concept of a{' '}
+                    <i className='pr-[0.12em]'>logically simple property or relation</i> is also already
+                    present there. <IPR /> applies the same basic idea to the problem of analyzing the concept
+                    of <i>intrinsicality</i>, and uses essentially the same framework. However, it runs into
+                    certain problems (see in particular §6.3 of that paper), which already point in the
+                    direction of an approach that employs a &lsquo;genuinely metaphysical&rsquo; notion (and
+                    not just &lsquo;broadly logical&rsquo; notions in addition to a concept of parthood).
                 </p>
                 <p>
                     In <QPR />, the &lsquo;broadly logical&rsquo; approach has finally been abandoned. This
                     paper already cites <OTT /> (despite having been published a few years earlier), in which
-                    the concept of <i>fundamentality</i> is taken as primitive, and which develops with the
-                    help of this concept a full account of how intensional entities are individuated. <TORS />
+                    the concept of <i className='pr-[0.12em]'>fundamentality</i> is taken as primitive, and
+                    which develops with the help of this concept a full account of how intensional entities
+                    are individuated. <TORS />
                     , in turn, is based on <OTT /> and to a lesser degree on <QVMR />. What makes <QVMR />{' '}
                     relevant for <TORS /> is mainly the fact that the former provides some historical
                     background for&mdash;as well as a defense of&mdash;an at least broadly{' '}
-                    <i>positionalistic</i> approach to the metaphysics of relational states. However, the
-                    approach defended in <QVMR /> is based on a triadic concept of &lsquo;occupation&rsquo;
-                    (as in, &lsquo;<i className='pr-[0.12em]'>X</i> occupies the position{' '}
-                    <i className='pr-[0.12em]'>P</i> in the state of affairs <i className='pr-[0.16em]'>S</i>
+                    <i className='pr-[0.12em]'>positionalistic</i> approach to the metaphysics of relational
+                    states. However, the approach defended in <QVMR /> is based on a triadic concept of
+                    &lsquo;occupation&rsquo; (as in, &lsquo;<i className='pr-[0.12em]'>X</i> occupies the
+                    position <i className='pr-[0.12em]'>P</i> in the state of affairs{' '}
+                    <i className='pr-[0.16em]'>S</i>
                     &rsquo;), whereas the approach of <TORS /> is based on a dyadic concept of
                     &lsquo;resultance&rsquo;, which links states of affairs to &lsquo;role assignments&rsquo;,
                     i.e., generalized multisets of role&ndash;entity pairs.
