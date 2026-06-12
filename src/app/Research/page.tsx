@@ -180,8 +180,7 @@ export default function Page() {
                 </table>
                 <p>
                     There are two main strands running through most of these papers: first, the search for a
-                    satisfactory theory of <i className='pr-[0.12em]'>intensional entities</i> (i.e., of
-                    properties, relations, and states of affairs) that can serve as a framework for further
+                    satisfactory theory of intensional entities that can serve as a framework for further
                     theorizing, metaphysical or otherwise; and second, the attempt to analyze certain concepts
                     of metaphysical interest, in particular ones applicable to intensional entities. Both
                     strands trace back to my{' '}
