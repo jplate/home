@@ -207,14 +207,14 @@ export default function Page() {
                     help of this concept a full account of how intensional entities are individuated. <TORS />
                     , in turn, is based on <OTT /> and to a lesser degree on <QVMR />. What makes <QVMR />{' '}
                     relevant for <TORS /> is mainly the fact that the former provides some historical
-                    background for&mdash;as well as a defense of&mdash;a <i>broadly positionalistic</i>{' '}
-                    approach to the metaphysics of relational states. However, the approach defended in{' '}
-                    <QVMR /> is based on a triadic concept of &lsquo;occupation&rsquo; (as in, &lsquo;
-                    <i className='pr-[0.12em]'>X</i> occupies the position <i className='pr-[0.12em]'>P</i> in
-                    the state of affairs <i className='pr-[0.16em]'>S</i>&rsquo;), whereas the approach of{' '}
-                    <TORS /> is based on a dyadic concept of &lsquo;resultance&rsquo;, which links states of
-                    affairs to &lsquo;role assignments&rsquo;, i.e., generalized multisets of
-                    role&ndash;entity pairs.
+                    background for&mdash;as well as a defense of&mdash;an at least broadly{' '}
+                    <i>positionalistic</i> approach to the metaphysics of relational states. However, the
+                    approach defended in <QVMR /> is based on a triadic concept of &lsquo;occupation&rsquo;
+                    (as in, &lsquo;<i className='pr-[0.12em]'>X</i> occupies the position{' '}
+                    <i className='pr-[0.12em]'>P</i> in the state of affairs <i className='pr-[0.16em]'>S</i>
+                    &rsquo;), whereas the approach of <TORS /> is based on a dyadic concept of
+                    &lsquo;resultance&rsquo;, which links states of affairs to &lsquo;role assignments&rsquo;,
+                    i.e., generalized multisets of role&ndash;entity pairs.
                 </p>
             </Section>
         </Content>
