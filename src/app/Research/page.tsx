@@ -177,10 +177,10 @@ export default function Page() {
                 </table>
                 <p>
                     There are two main strands running through most of these papers: first, the search for a
-                    satisfactory framework in which to theorize about <i>intensional entities</i> (i.e., about
-                    properties, relations, and states of affairs); and second, the attempt to analyze certain
-                    concepts of metaphysical interest, in particular ones applicable to intensional entities.
-                    Both strands trace back to my{' '}
+                    satisfactory theory of <i>intensional entities</i> (i.e., of properties, relations, and
+                    states of affairs) that can serve as a framework for further theorizing, metaphysical or
+                    otherwise; and second, the attempt to analyze certain concepts of metaphysical interest,
+                    in particular ones applicable to intensional entities. Both strands trace back to my{' '}
                     <a
                         href='https://openscholarship.wustl.edu/etd/1017/'
                         target='_blank'
