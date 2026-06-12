@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Content from '../components/Content';
 import Section from '../components/Section';
+import AbstractDrawer from '../components/AbstractDrawer';
 import PhilPapersLogo from '../components/PhilPapersLogo';
 import { BibItem, papers, reviews } from './pubs';
 
@@ -99,6 +100,7 @@ const PubList = ({ pubs }: PubListProps) => {
                     <div className='mt-1.5'>{pub.details}</div>
                     {pub.doi && <div className='-mt-0.5 text-xs'>DOI: {pub.doi}</div>}
                     <div className='mt-1.5'>{pub.year}</div>
+                    {pub.abstract && <AbstractDrawer abstract={pub.abstract} />}
                 </li>
             ))}
         </ol>

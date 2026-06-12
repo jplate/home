@@ -7,10 +7,12 @@ const geistSans = localFont({
     variable: '--font-geist-sans',
     weight: '100 900',
 });
-const geistMono = localFont({
-    src: './fonts/GeistMonoVF.woff',
-    variable: '--font-geist-mono',
-    weight: '100 900',
+const plexMono = localFont({
+    src: [
+        { path: './fonts/IBMPlexMono-Regular.woff2', weight: '400' },
+        { path: './fonts/IBMPlexMono-Medium.woff2', weight: '500' },
+    ],
+    variable: '--font-plex-mono',
 });
 
 export const metadata: Metadata = {
@@ -85,8 +87,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
-            <body className={` ${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+        <html lang='en' className={`${geistSans.variable} ${plexMono.variable}`}>
+            <body className='antialiased'>{children}</body>
         </html>
     );
 }
