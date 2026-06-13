@@ -79,6 +79,9 @@ export const metadata: Metadata = {
         icon: './icon.svg',
         apple: './apple_icon.png',
     },
+    verification: {
+        google: 'TcSpSJRp_j2y0o20j_QW9co75JRUWQzIZqQgCTfbmf8',
+    },
 };
 
 export default function RootLayout({
