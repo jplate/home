@@ -102,7 +102,7 @@ export default function Page() {
                     in June 2026:
                 </p>
                 <a
-                    href='https://claude.ai/public/artifacts/eed31e2a-e102-406c-8c75-d511bd380a4a'
+                    href='https://claude.ai/public/artifacts/d17c3704-5be9-4c81-b53f-2691efce3a2b'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-gray-200/50 hover:border-gray-300 dark:hover:bg-white/5 dark:hover:border-gray-700 transition-colors duration-100 whitespace-normal no-underline'
