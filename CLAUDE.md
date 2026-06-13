@@ -13,10 +13,11 @@ npm run dev      # dev server (Turbopack) on :3000
 npm run build    # static export to out/  (also runs TS type-checking)
 npm run lint     # eslint over .js/.jsx/.ts/.tsx
 npm run format   # prettier --write .
-npm run deploy   # build + publish out/ to gh-pages
 ```
 
 There is no test framework. Treat `npm run build` (which type-checks) plus `npm run lint` as the verification gate.
+
+**Deployment is automatic via GitHub Actions** (`.github/workflows/nextjs.yml`) on every push to `main` — it builds and publishes to GitHub Pages. There is no `gh-pages` branch and no manual deploy script; pushing `main` is the deploy.
 
 ## Static export & basePath (important)
 

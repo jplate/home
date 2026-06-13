@@ -7,7 +7,6 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "deploy": "next build && npx gh-pages -d out",
         "format": "prettier --write ."
     },
     "dependencies": {
@@ -32,7 +31,6 @@
         "eslint-config-next": ">=16.1.6",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.5",
-        "gh-pages": "^6.3.0",
         "globals": "^17.3.0",
         "postcss": "^8.5.6",
         "prettier": "^3.8.1",
