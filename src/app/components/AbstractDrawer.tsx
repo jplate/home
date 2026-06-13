@@ -64,7 +64,7 @@ const AbstractDrawer = ({ abstract }: { abstract: string }) => {
                 }`}
             >
                 <div className='min-h-0'>
-                    <p className='mt-1 mb-0 rounded-xl bg-gray-200/40 px-4 py-3 text-sm dark:bg-white/5'>
+                    <p className='mt-1 mb-0 rounded-r-xl border-l-2 border-l-[color:var(--links)] bg-gray-200/40 px-4 py-3 text-sm shadow-[inset_0_0_8px_rgba(255,255,255,0.5)] dark:bg-white/5 dark:shadow-[inset_0_0_8px_rgba(0,0,0,0.3)]'>
                         {renderAbstract(abstract)}
                     </p>
                 </div>
