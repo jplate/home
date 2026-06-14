@@ -102,11 +102,11 @@ export default function Page() {
                     (and subsequently modified) in June 2026:
                 </p>
                 <a
-                    href='https://claude.ai/public/artifacts/d718ae27-254d-4abb-b1d5-64867006367d'
-                    // version 15
+                    href='https://claude.ai/public/artifacts/c6b04fb0-145d-4817-9a2e-f74e3c93006b'
+                    // version 16
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-gray-200/50 hover:border-gray-300 dark:hover:bg-white/5 dark:hover:border-gray-700 transition-colors duration-100 whitespace-normal no-underline'
+                    className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-white/5 dark:hover:bg-black/5 hover:border-links hover:card-shadow transition-all duration-200 whitespace-normal no-underline'
                 >
                     <span className='block font-mono text-xs uppercase tracking-widest opacity-60'>
                         Interactive

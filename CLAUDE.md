@@ -34,7 +34,7 @@ There is no test framework. Treat `npm run build` (which type-checks) plus `npm 
 
 **Publications data.** `Publications/pubs.tsx` exports typed `papers`/`reviews` arrays of `BibItem`. `Publications/page.tsx` maps over them. A `BibItem` may carry an `abstract` (LaTeX-convention string) — see below.
 
-**AbstractDrawer** (`components/AbstractDrawer.tsx`). Client component that toggles a paper's abstract with a CSS-grid `grid-template-rows: 0fr↔1fr` drawer animation. Abstracts are stored as strings using **LaTeX conventions**, rendered at display time: `$...$` → inline KaTeX, `\emph{}`/`\textit{}` → italics, and `---`/`--`/`` `` ``/`''` → typographic dashes and quotes. Add abstracts as plain TeX-ish strings in `pubs.tsx`; the component handles conversion.
+**AbstractDrawer** (`components/AbstractDrawer.tsx`). Client component that toggles a paper's abstract with a CSS-grid `grid-template-rows: 0fr↔1fr` drawer animation. Abstracts are stored as strings using **LaTeX conventions**, rendered at display time: `$...$` → inline KaTeX, `\emph{}`/`\textit{}` → italics, and `---`/`--`/` ` ``/`''`→ typographic dashes and quotes. Add abstracts as plain TeX-ish strings in`pubs.tsx`; the component handles conversion.
 
 ## Styling & theming
 
