@@ -102,8 +102,8 @@ export default function Page() {
                     (and subsequently modified) in June 2026:
                 </p>
                 <a
-                    href='https://claude.ai/public/artifacts/c6b04fb0-145d-4817-9a2e-f74e3c93006b'
-                    // version 16
+                    href='https://claude.ai/public/artifacts/ac533c59-0ced-457c-8472-0d01f4333e00'
+                    // version 17
                     target='_blank'
                     rel='noopener noreferrer'
                     className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-white/5 dark:hover:bg-black/5 hover:border-links hover:card-shadow transition-all duration-200 whitespace-normal no-underline'
