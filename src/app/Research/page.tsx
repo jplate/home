@@ -90,7 +90,7 @@ export default function Page() {
                     />
                 </div>
                 <p>
-                    In case you&rsquo;d like an interactive approach to my published work in metaphysics, here
+                    In case you&rsquo;d like a more <i className='pr-[0.12em]'>interactive</i> approach to my published work in metaphysics, here
                     is a &lsquo;shared artifact&rsquo; that I made with{' '}
                     <a
                         href='https://www.anthropic.com/news/claude-fable-5-mythos-5'
@@ -106,9 +106,9 @@ export default function Page() {
                     // version 17
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-white/5 dark:hover:bg-black/5 hover:border-links hover:card-shadow transition-all duration-200 whitespace-normal no-underline'
+                    className='group card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-white/15 dark:hover:bg-black/15 hover:border-links transition-colors duration-200 whitespace-normal no-underline'
                 >
-                    <span className='block font-mono text-xs uppercase tracking-widest opacity-60'>
+                    <span className='block font-mono text-xs uppercase tracking-widest opacity-60 transition-transform duration-200 group-hover:translate-x-3'>
                         Interactive
                     </span>
                     <span className='block font-bold mt-1'>

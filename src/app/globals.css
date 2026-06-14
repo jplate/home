@@ -2,10 +2,6 @@
 @plugin '@tailwindcss/typography';
 @source "../**/*.{js,ts,jsx,tsx}";
 
-@utility card-shadow {
-    box-shadow: inset 0 0 6px 1px var(--links);
-}
-
 @theme {
     --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
     --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
