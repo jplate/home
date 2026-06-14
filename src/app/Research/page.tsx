@@ -99,7 +99,7 @@ export default function Page() {
                     >
                         <i className='pr-[0.12em]'>Claude Fable 5</i>
                     </a>{' '}
-                    in June 2026:
+                    (and subsequently modified) in June 2026:
                 </p>
                 <a
                     href='https://claude.ai/public/artifacts/d5ddcdd2-4277-4315-9096-823ec8884eec'
