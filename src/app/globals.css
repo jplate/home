@@ -14,7 +14,7 @@
     --color-btnhovercolor: rgb(var(--btnhovercolor));
     --color-btnactivebg: rgb(var(--btnactivebg));
     --color-btnactivecolor: rgb(var(--btnactivecolor));
-    --color-links: rgb(var(--links));
+    --color-links: var(--links);
 }
 
 :root {

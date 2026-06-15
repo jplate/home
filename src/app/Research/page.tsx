@@ -106,7 +106,7 @@ export default function Page() {
                     // version 18
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='group card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-white/15 dark:hover:bg-black/15 hover:border-links transition-colors duration-200 whitespace-normal no-underline'
+                    className='group card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-links/5 hover:border-links transition-colors duration-200 whitespace-normal no-underline'
                 >
                     <span className='block font-mono text-xs uppercase tracking-widest opacity-60 transition-transform duration-200 group-hover:translate-x-3'>
                         Interactive
