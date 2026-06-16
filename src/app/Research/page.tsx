@@ -76,19 +76,8 @@ export default function Page() {
                     </a>
                     &rsquo;, in which I propose a conception of relations as <em>sets of role sequences</em>.
                     The tentative upshot is an ontology in which there are no &lsquo;complex&rsquo; entities
-                    other than states of affairs and roles<span className='hidden md:inline'>:</span>
-                    <span className='md:hidden'>.</span>
+                    other than states of affairs and roles.
                 </p>
-                <div className='hidden md:flex justify-center mb-9 min-h-[300px]'>
-                    <Image
-                        src={diagramSrc}
-                        alt={'An ontology of roles and states (and particulars)'}
-                        className='rounded-xl dark:opacity-[0.8] dark:invert'
-                        width={500}
-                        placeholder='blur'
-                        priority
-                    />
-                </div>
                 <p>
                     In case you&rsquo;d like a more <i className='pr-[0.12em]'>interactive</i> approach to my published work in metaphysics, here
                     is a &lsquo;shared artifact&rsquo; that I made with{' '}
