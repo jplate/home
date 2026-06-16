@@ -72,7 +72,12 @@ body {
 
 ::selection {
     background-color: #b3d4fc;
-    color: #000; /* black text */
+}
+
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        background-color: #b2aec0; 
+    }
 }
 
 /* Override typography plugin to use our foreground colors (plugin defaults override :root). */
