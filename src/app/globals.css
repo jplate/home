@@ -95,7 +95,7 @@ body {
     question does not wrap around a line break, we're imposing a 'white-space: nowrap' directive. However, this policy is 
     suboptimal for smaller screens, and so we reserve the effect for bigger ones. */
 @media (min-width: 1024px) {
-    a:not(.menu-item):not(.logo):not(.nav-item):not(.card-link) {
+    a:not(.menu-item):not(.logo):not(.nav-item):not(.companion-card) {
         color: var(--links);
         font-weight: 600;
         text-decoration: none !important;
@@ -103,7 +103,7 @@ body {
         white-space: nowrap;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.card-link)::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.companion-card)::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -119,7 +119,7 @@ body {
             opacity 0.2s ease-out;
     }
 
-    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.card-link):hover::after {
+    a:not(.nav-item):not(.menu-item):not(.logo):not(.philpapers-link):not(.companion-card):hover::after {
         opacity: 1;
         transform: scaleX(1);
     }
@@ -155,14 +155,14 @@ a.nav-item {
     text-decoration: none;
 }
 
-/* 'Normal' links, including card-links */
+/* 'Normal' links, including companion-cards */
 a:not(.menu-item):not(.logo):not(.nav-item) {
     color: var(--links);
     font-weight: 600;
     text-decoration: none;
 }
 
-a:not(.menu-item):not(.logo):not(.nav-item):not(.card-link):hover {
+a:not(.menu-item):not(.logo):not(.nav-item):not(.companion-card):hover {
     text-decoration: underline;
 }
 
@@ -202,6 +202,67 @@ nav {
 .menu {
     -webkit-backdrop-filter: blur(10px); /* for Safari */
     backdrop-filter: blur(10px);
+}
+
+/******************************************************************************
+Companion-card (links to Claude artifact)
+A diagonal gradient blooms in behind the content on hover (done as an ::before overlay so its opacity can
+transition — a background-image can't). Color, weight, and 'no underline' come from the 'normal links' 
+rule above, since the companion card is styled as an <a>.
+*******************************************************************************/
+
+.companion-card {
+    display: block;
+    margin-block: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--color-btnborder);
+    border-radius: 0.75rem;
+    background-color: var(--color-btnbg);
+    position: relative;
+    isolation: isolate;
+    transition:
+        background-color 0.2s,
+        border-color 0.2s;
+}
+
+.companion-card:hover {
+    border-color: var(--color-links);
+}
+
+.companion-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1; /* above the card's own background, below its text content */
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        var(--background) 20%,
+        color-mix(in oklab, var(--background), pink 20%) 50%,
+        color-mix(in oklab, var(--links), var(--background) 35%) 110%
+    );
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.companion-card:hover::before {
+    opacity: 1;
+}
+
+/* The 'Interactive' eyebrow (first child): a small mono label that slides right on hover. */
+.companion-card > span:first-child {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    transition: transform 0.2s;
+}
+
+.companion-card:hover > span:first-child {
+    transform: translateX(0.75rem);
 }
 
 /******************************************************************************

@@ -106,11 +106,9 @@ export default function Page() {
                     // version 20
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='group card-link not-prose block border border-btnborder rounded-xl p-4 my-6 bg-btnbg hover:bg-links/7 hover:border-links transition-colors duration-200 whitespace-normal no-underline'
+                    className='companion-card'
                 >
-                    <span className='block font-mono text-xs uppercase tracking-widest opacity-60 transition-transform duration-200 group-hover:translate-x-3'>
-                        Interactive
-                    </span>
+                    <span>Interactive</span>
                     <span className='block font-bold mt-1'>
                         Properties &amp; Relations — ask my papers anything
                     </span>
