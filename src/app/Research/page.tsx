@@ -91,8 +91,8 @@ export default function Page() {
                     (and subsequently modified) in June 2026:
                 </p>
                 <a
-                    href='https://claude.ai/public/artifacts/280299e9-acc4-4bec-b4bb-c95e6737fba4'
-                    // version 20
+                    href='https://claude.ai/public/artifacts/e276648d-0a99-4046-94fc-44c82391cf07'
+                    // version 21
                     target='_blank'
                     rel='noopener noreferrer'
                     className='companion-card'
