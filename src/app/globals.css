@@ -270,6 +270,28 @@ rule above, since the companion card is styled as an <a>.
     transform: translateX(0.75rem);
 }
 
+/* Title (second child): bold; brightens and saturates on hover. */
+.companion-card > span:nth-child(2) {
+    display: block;
+    margin-top: 0.25rem;
+    font-weight: 700;
+    transition: filter 0.2s;
+}
+
+.companion-card:hover > span:nth-child(2) {
+    filter: brightness(1.15) saturate(1.5);
+}
+
+/* Description (third child): small, dimmed body text. */
+.companion-card > span:nth-child(3) {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
 /******************************************************************************
 PhilPapers-links
 *******************************************************************************/

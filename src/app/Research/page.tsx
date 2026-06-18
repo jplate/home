@@ -98,10 +98,8 @@ export default function Page() {
                     className='companion-card'
                 >
                     <span>Interactive</span>
-                    <span className='block font-bold mt-1'>
-                        Properties &amp; Relations — ask my papers anything
-                    </span>
-                    <span className='block mt-2 text-sm font-normal opacity-80'>
+                    <span>Properties &amp; Relations — ask my papers anything</span>
+                    <span>
                         An AI reading companion grounded in the full text of six papers. Opens on claude.ai; a
                         free Claude account is required.
                     </span>
