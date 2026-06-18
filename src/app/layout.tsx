@@ -17,26 +17,24 @@ const plexMono = localFont({
 
 export const metadata: Metadata = {
     title: {
-        default: 'Jan Plate - Analytic Philosopher',
+        default: 'Jan Plate',
         template: '%s | Jan Plate Philosophy',
     },
     description:
-        'Jan Plate is an analytic philosopher working in metaphysics and philosophical logic. Research in essence, types, relations, and higher-order metaphysics. PhD from Washington University in St. Louis.',
+        'Jan Plate is an analytic philosopher specializing in metaphysics. PhD from Washington University in St. Louis.',
     keywords: [
         'Jan Plate',
         'philosophy',
         'analytic philosophy',
         'metaphysics',
+        'properties and relations',
         'philosophical logic',
         'essence',
-        'type theory',
         'higher-order metaphysics',
         'ontology',
         'philosopher',
-        'academic philosopher',
-        'Washington University',
-        'Lugano',
-        'Großenhain',
+        'Washington University in St. Louis',
+        'Geestland',
     ],
     authors: [{ name: 'Jan Plate' }],
     creator: 'Jan Plate',
@@ -47,9 +45,9 @@ export const metadata: Metadata = {
         locale: 'en_US',
         url: 'https://jplate.github.io/home',
         siteName: 'Jan Plate Philosophy',
-        title: 'Jan Plate - Analytic Philosopher',
+        title: 'Jan Plate, analytic metaphysician',
         description:
-            'Analytic philosopher working in metaphysics and philosophical logic. Research on essence, types, relations, and higher-order metaphysics.',
+            'Analytic philosopher working in metaphysics, especially the metaphysics of intensional entities.',
         images: [
             {
                 url: '/icon.svg',
@@ -59,9 +57,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary',
-        title: 'Jan Plate - Analytic Philosopher',
+        title: 'Jan Plate',
         description:
-            'Analytic philosopher working in metaphysics and philosophical logic. PhD 2012 from Washington University in St. Louis.',
+            'Analytic philosopher working in metaphysics, especially the metaphysics of intensional entities. PhD 2012 from Washington University in St. Louis.',
         images: ['/icon.svg'],
     },
     robots: {
