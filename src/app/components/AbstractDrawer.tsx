@@ -57,14 +57,14 @@ const AbstractDrawer = ({ abstract }: { abstract: string }) => {
             </button>
             <div
                 id={id}
-                className={`grid overflow-hidden ${
+                className={`grid -ml-12 overflow-hidden sm:ml-0 ${
                     open
                         ? 'grid-rows-[1fr] [transition:grid-template-rows_0.3s_cubic-bezier(0,0,0.2,1)]'
                         : 'grid-rows-[0fr] [transition:grid-template-rows_0.25s_ease-in-out]'
                 }`}
             >
                 <div className='min-h-0'>
-                    <p className='mt-1 mb-0 rounded-r-xl border-l-2 border-l-[color:var(--links)] bg-gray-200/40 px-4 py-3 text-sm shadow-[inset_0_0_8px_rgba(255,255,255,0.5)] dark:bg-white/5 dark:shadow-[inset_0_0_8px_rgba(0,0,0,0.3)]'>
+                    <p className='mt-1 mb-0 rounded-xl sm:rounded-l-none sm:rounded-r-xl sm:border-l-2 sm:border-l-[color:var(--links)] bg-gray-200/40 px-4 py-3 text-sm dark:bg-white/5'>
                         {renderAbstract(abstract)}
                     </p>
                 </div>
