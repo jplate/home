@@ -51,7 +51,7 @@
         --prose-counters: #ddd;
         --prose-bullets: #ddd;
 
-        --btnbg: 3, 7, 10; 
+        --btnbg: 3, 7, 10;
         --btncolor: 156, 163, 175; /* gray-400 */
         --btnborder: 30, 41, 57; /* gray-800 */
         --btnhoverbg: 156, 163, 175; /* gray-400 */
@@ -76,7 +76,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     ::selection {
-        background-color: #b2aec0; 
+        background-color: #b2aec0;
     }
 }
 

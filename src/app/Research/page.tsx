@@ -79,8 +79,8 @@ export default function Page() {
                     other than states of affairs and roles.
                 </p>
                 <p>
-                    In case you&rsquo;d like a more <i className='pr-[0.12em]'>interactive</i> approach to my published work in metaphysics, here
-                    is a &lsquo;shared artifact&rsquo; that I made with{' '}
+                    In case you&rsquo;d like a more <i className='pr-[0.12em]'>interactive</i> approach to my
+                    published work in metaphysics, here is a &lsquo;shared artifact&rsquo; that I made with{' '}
                     <a
                         href='https://www.anthropic.com/news/claude-fable-5-mythos-5'
                         target='_blank'
