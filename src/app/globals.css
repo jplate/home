@@ -14,7 +14,7 @@
     --color-btnhovercolor: rgb(var(--btnhovercolor));
     --color-btnactivebg: rgb(var(--btnactivebg));
     --color-btnactivecolor: rgb(var(--btnactivecolor));
-    --color-links: var(--links);
+    --abstract-bg: color-mix(in oklab, var(--background), var(--links) 15%);
 }
 
 :root {
@@ -231,7 +231,7 @@ rule above, since the companion card is styled as an <a>.
 }
 
 .companion-card:hover {
-    border-color: var(--color-links);
+    border-color: var(--links);
 }
 
 .companion-card::before {
