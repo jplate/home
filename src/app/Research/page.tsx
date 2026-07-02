@@ -61,7 +61,7 @@ const Diagram = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 611 261'
-        className='-mx-8 w-[110%] md:w-[360px] xl:w-[430px]'
+        className='-mx-8 w-[110%] sm:w-[430px]'
         {...props}
     >
         <path
