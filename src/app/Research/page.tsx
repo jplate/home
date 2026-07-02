@@ -58,151 +58,99 @@ const TORS = () => (
 );
 
 const Diagram = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 611 261"
-    width = "60%"
-    height = "auto"
-    {...props}
-  >
-    <path
-      d="M5.5 160.5c0 25 20 45 45 45h210c25 0 45-20 45-45v-110c0-25-20-45-45-45h-210c-25 0-45 20-45 45z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M51.5 159.5c0 17.5 14.5 32 32 32h177a31.375 31.375 0 0 0 31-32v-77c0-17.5-13.5-31-31-31h-177a31.375 31.375 0 0 0-32 31z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M82.5 156.5c0 12.25 9.75 22 22 22h151c12.247.272 22.728-9.753 23-22v-52c-.272-12.247-10.753-22.272-23-22h-151c-12.25 0-22 9.75-22 22z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M103.5 151.5c0 8.575 6.425 15 15 15h133c8.575 0 15-6.425 15-15v-24c0-8.575-6.425-15-15-15h-133c-8.575 0-15 6.425-15 15z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <text
-      x={146.641}
-      y={144.828}
-      fontSize={18.773}
-      fill="currentColor"
-    >
-      {"relations"}
-    </text>
-    <text
-      x={162.836}
-      y={102.828}
-      fontSize={18.773}
-      fill="currentColor"
-    >
-      {"sets"}
-    </text>
-    <text
-      x={117.523}
-      y={72.469}
-      fontSize={21.902}
-      fill="currentColor"
-    >
-      {"properties"}
-    </text>
-    <text
-      x={126.773}
-      y={32.609}
-      fontSize={25.031}
-      fill="currentColor"
-    >
-      {"roles"}
-    </text>
-    <path
-      d="M605.5 160.5c0 25-20 45-45 45h-210c-25 0-45-20-45-45v-110c0-25 20-45 45-45h210c25 0 45 20 45 45z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M559.5 159.5c0 17.5-14.5 32-32 32h-177a31.375 31.375 0 0 1-31-32v-77c0-17.5 13.5-31 31-31h177a31.375 31.375 0 0 1 32 31z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M528.5 156.5c0 12.25-9.75 22-22 22h-151c-12.247.272-22.728-9.753-23-22v-52c.272-12.247 10.753-22.272 23-22h151c12.25 0 22 9.75 22 22z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M507.5 151.5c0 8.575-6.425 15-15 15h-133c-8.575 0-15-6.425-15-15v-24c0-8.575 6.425-15 15-15h133c8.575 0 15 6.425 15 15z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <text
-      x={374.586}
-      y={145.156}
-      fontSize={18.773}
-      fill="currentColor"
-    >
-      {"ord. objects"}
-    </text>
-    <text
-      x={402.156}
-      y={102.828}
-      fontSize={18.773}
-      fill="currentColor"
-    >
-      {"events"}
-    </text>
-    <text
-      x={415.758}
-      y={72.531}
-      fontSize={21.902}
-      fill="currentColor"
-    >
-      {"facts"}
-    </text>
-    <text
-      x={420.977}
-      y={32.609}
-      fontSize={25.031}
-      fill="currentColor"
-    >
-      {"states"}
-    </text>
-    <path
-      d="M412.5 231.5c0 13.203-10.797 24-24 24h-166c-13.203 0-24-10.797-24-24v-3c.281-13.2 10.8-23.281 24-23h166c13.2-.281 23.719 9.8 24 23z"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <text
-      x={242.578}
-      y={237.609}
-      fontSize={25.031}
-      fill="currentColor"
-    >
-      {"particulars"}
-    </text>
-  </svg>
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 611 261' width='60%' height='auto' {...props}>
+        <path
+            d='M5.5 160.5c0 25 20 45 45 45h210c25 0 45-20 45-45v-110c0-25-20-45-45-45h-210c-25 0-45 20-45 45z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M51.5 159.5c0 17.5 14.5 32 32 32h177a31.375 31.375 0 0 0 31-32v-77c0-17.5-13.5-31-31-31h-177a31.375 31.375 0 0 0-32 31z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M82.5 156.5c0 12.25 9.75 22 22 22h151c12.247.272 22.728-9.753 23-22v-52c-.272-12.247-10.753-22.272-23-22h-151c-12.25 0-22 9.75-22 22z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M103.5 151.5c0 8.575 6.425 15 15 15h133c8.575 0 15-6.425 15-15v-24c0-8.575-6.425-15-15-15h-133c-8.575 0-15 6.425-15 15z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <text x={146.641} y={144.828} fontSize={18.773} fill='currentColor'>
+            {'relations'}
+        </text>
+        <text x={162.836} y={102.828} fontSize={18.773} fill='currentColor'>
+            {'sets'}
+        </text>
+        <text x={117.523} y={72.469} fontSize={21.902} fill='currentColor'>
+            {'properties'}
+        </text>
+        <text x={126.773} y={32.609} fontSize={25.031} fill='currentColor'>
+            {'roles'}
+        </text>
+        <path
+            d='M605.5 160.5c0 25-20 45-45 45h-210c-25 0-45-20-45-45v-110c0-25 20-45 45-45h210c25 0 45 20 45 45z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M559.5 159.5c0 17.5-14.5 32-32 32h-177a31.375 31.375 0 0 1-31-32v-77c0-17.5 13.5-31 31-31h177a31.375 31.375 0 0 1 32 31z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M528.5 156.5c0 12.25-9.75 22-22 22h-151c-12.247.272-22.728-9.753-23-22v-52c.272-12.247 10.753-22.272 23-22h151c12.25 0 22 9.75 22 22z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <path
+            d='M507.5 151.5c0 8.575-6.425 15-15 15h-133c-8.575 0-15-6.425-15-15v-24c0-8.575 6.425-15 15-15h133c8.575 0 15 6.425 15 15z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <text x={374.586} y={145.156} fontSize={18.773} fill='currentColor'>
+            {'ord. objects'}
+        </text>
+        <text x={402.156} y={102.828} fontSize={18.773} fill='currentColor'>
+            {'events'}
+        </text>
+        <text x={415.758} y={72.531} fontSize={21.902} fill='currentColor'>
+            {'facts'}
+        </text>
+        <text x={420.977} y={32.609} fontSize={25.031} fill='currentColor'>
+            {'states'}
+        </text>
+        <path
+            d='M412.5 231.5c0 13.203-10.797 24-24 24h-166c-13.203 0-24-10.797-24-24v-3c.281-13.2 10.8-23.281 24-23h166c13.2-.281 23.719 9.8 24 23z'
+            fill='none'
+            stroke='currentColor'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        />
+        <text x={242.578} y={237.609} fontSize={25.031} fill='currentColor'>
+            {'particulars'}
+        </text>
+    </svg>
 );
-
 
 export default function Page() {
     return (
