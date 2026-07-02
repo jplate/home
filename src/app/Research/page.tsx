@@ -58,7 +58,12 @@ const TORS = () => (
 );
 
 const Diagram = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 611 261' className='w-full sm:w-[80%] md:w-[60%]' {...props}>
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 611 261'
+        className='w-full sm:w-[80%] md:w-[60%]'
+        {...props}
+    >
         <path
             d='M5.5 160.5c0 25 20 45 45 45h210c25 0 45-20 45-45v-110c0-25-20-45-45-45h-210c-25 0-45 20-45 45z'
             fill='none'
