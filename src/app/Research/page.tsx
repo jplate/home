@@ -211,29 +211,20 @@ export default function Page() {
                     <tbody className='align-top'>
                         <tr>
                             <td className='py-1 pr-5 whitespace-nowrap'>
-                                <LSPR />
+                                <TORS />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Logically Simple Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Philosophers&rsquo; Imprint</i> (2016)
+                                &lsquo;Towards an Ontology of Roles and States&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Erkenntnis</i> (forthcoming; published online 2026)
                             </td>
                         </tr>
                         <tr>
                             <td className='py-1 pr-5 whitespace-nowrap'>
-                                <IPR />
+                                <OTT />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Intrinsic Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Inquiry</i> (2018)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className='py-1 pr-5 whitespace-nowrap'>
-                                <QPR />
-                            </td>
-                            <td className='py-1'>
-                                &lsquo;Qualitative Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Philosophical Studies</i> (2022)
+                                &lsquo;Ordinal Type Theory&rsquo;, <i className='pr-[0.12em]'>Inquiry</i>{' '}
+                                (2025)
                             </td>
                         </tr>
                         <tr>
@@ -248,20 +239,29 @@ export default function Page() {
                         </tr>
                         <tr>
                             <td className='py-1 pr-5 whitespace-nowrap'>
-                                <OTT />
+                                <QPR />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Ordinal Type Theory&rsquo;, <i className='pr-[0.12em]'>Inquiry</i>{' '}
-                                (2025)
+                                &lsquo;Qualitative Properties and Relations&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Philosophical Studies</i> (2022)
                             </td>
                         </tr>
                         <tr>
                             <td className='py-1 pr-5 whitespace-nowrap'>
-                                <TORS />
+                                <IPR />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Towards an Ontology of Roles and States&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Erkenntnis</i> (forthcoming; published online 2026)
+                                &lsquo;Intrinsic Properties and Relations&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Inquiry</i> (2018)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className='py-1 pr-5 whitespace-nowrap'>
+                                <LSPR />
+                            </td>
+                            <td className='py-1'>
+                                &lsquo;Logically Simple Properties and Relations&rsquo;,{' '}
+                                <i className='pr-[0.12em]'>Philosophers&rsquo; Imprint</i> (2016)
                             </td>
                         </tr>
                     </tbody>
