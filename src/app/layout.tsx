@@ -18,7 +18,7 @@ const plexMono = localFont({
 export const metadata: Metadata = {
     title: {
         default: 'Jan Plate',
-        template: '%s | Jan Plate Philosophy',
+        template: '%s | Jan Plate',
     },
     description:
         'Jan Plate is an analytic philosopher specializing in metaphysics. PhD from Washington University in St. Louis.',
