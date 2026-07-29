@@ -59,8 +59,8 @@ const AbstractDrawer = ({ abstract }: { abstract: string }) => {
                 id={id}
                 className={`grid -ml-12 overflow-hidden sm:ml-0 ${
                     open
-                        ? 'grid-rows-[1fr] [transition:grid-template-rows_0.3s_cubic-bezier(0,0,0.2,1)]'
-                        : 'grid-rows-[0fr] [transition:grid-template-rows_0.25s_ease-in-out]'
+                        ? 'grid-rows-[1fr] opacity-100 [transition:grid-template-rows_0.3s_cubic-bezier(0,0,0.2,1),opacity_0.2s_ease-in-out]'
+                        : 'grid-rows-[0fr] opacity-0 [transition:grid-template-rows_0.25s_ease-in-out,opacity_0.2s_ease-in-out]'
                 }`}
             >
                 <div className='min-h-0'>

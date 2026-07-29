@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Content from '../components/Content';
 import Section from '../components/Section';
 
