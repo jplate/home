@@ -1,47 +1,11 @@
 'use client';
 
 import { useId, useState } from 'react';
-import katex from 'katex';
-import 'katex/dist/katex.min.css';
 
-/* Abstracts are written using LaTeX conventions: $...$ for inline math (rendered with KaTeX),
-   \emph{...} for emphasis, and TeX-style dashes and quotes. */
+/* Abstracts are plain JSX (see pubs.tsx): emphasis with <em>/<i>, and typographic dashes and
+   quotes written as HTML entities. */
 
-const texText = (s: string) =>
-    s
-        .replace(/---/g, '—')
-        .replace(/--/g, '–')
-        .replace(/``/g, '“')
-        .replace(/''/g, '”')
-        .replace(/`/g, '‘')
-        .replace(/'/g, '’');
-
-const renderTextSegment = (s: string) =>
-    s.split(/\\(?:emph|textit)\{([^}]*)\}/g).map((part, i) =>
-        i % 2 === 1 ? (
-            <i key={i} className='pr-[0.12em]'>
-                {texText(part)}
-            </i>
-        ) : (
-            texText(part)
-        )
-    );
-
-const renderAbstract = (s: string) =>
-    s.split(/\$([^$]*)\$/g).map((part, i) =>
-        i % 2 === 1 ? (
-            <span
-                key={i}
-                dangerouslySetInnerHTML={{
-                    __html: katex.renderToString(part, { throwOnError: false }),
-                }}
-            />
-        ) : (
-            <span key={i}>{renderTextSegment(part)}</span>
-        )
-    );
-
-const AbstractDrawer = ({ abstract }: { abstract: string }) => {
+const AbstractDrawer = ({ abstract }: { abstract: React.ReactNode }) => {
     const [open, setOpen] = useState(false);
     const id = useId();
     return (
@@ -65,7 +29,7 @@ const AbstractDrawer = ({ abstract }: { abstract: string }) => {
             >
                 <div className='min-h-0'>
                     <p className='mt-1 mb-0 rounded-xl sm:rounded-l-none sm:border-l-2 sm:border-l-[color:var(--links)] bg-[color:var(--abstract-bg)] px-4 py-3 text-sm'>
-                        {renderAbstract(abstract)}
+                        {abstract}
                     </p>
                 </div>
             </div>
