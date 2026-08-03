@@ -40,16 +40,20 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
-        --foreground: #ddd;
-        --logocolor: #e5e7eb;
-        --links: #a3afd3; /* links in darkmode are in light blue rather than light gray, because boldface alone is somehow not very effective at 
-                distinguishing the links from the surrounding text when the text is in a light color on a dark background. */
-        --prose-body: #ddd;
-        --prose-headings: #ddd;
-        --prose-bold: #ddd;
-        --prose-counters: #ddd;
-        --prose-bullets: #ddd;
+        /* Not pure black: a slight lift keeps the page from reading as a flat void, and gives the
+           foreground tones something to sit on. */
+        --background: #0e0e11;
+        --foreground: #efeff3;
+        --logocolor: #fafafc;
+        /* Links in darkmode are in periwinkle rather than light gray, because boldface alone is somehow not very
+                effective at distinguishing the links from the surrounding text when the text is in a light color on a
+                dark background. */
+        --links: #a5b7f2;
+        --prose-body: #efeff3;
+        --prose-headings: #fafafc;
+        --prose-bold: #ffffff;
+        --prose-counters: #efeff3;
+        --prose-bullets: #efeff3;
 
         --btnbg: 3, 7, 10;
         --btncolor: 156, 163, 175; /* gray-400 */
