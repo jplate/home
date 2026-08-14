@@ -80,7 +80,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     ::selection {
-        background-color: #b2aec0;
+        background-color: #8f96c0;
     }
 }
 
@@ -134,7 +134,7 @@ body {
     }
 }
 
-/* For the nav-items, we have to add a translation effect that connects the hover effect with the more permanent border-effect.
+/* For the nav-items, we have to add a translation effect that visually connects the hover effect with the more permanent border-effect.
    (The latter is handled by a conditionally applied tailwind class in NavItemComp.) */
 a.nav-item::after {
     content: '';
