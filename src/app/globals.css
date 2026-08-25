@@ -80,7 +80,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     ::selection {
-        background-color: #8f96c0;
+        background-color: #b83f36;
     }
 }
 
