@@ -1,3 +1,5 @@
+import Italic from '../components/Italic';
+
 export interface CoAuthor {
     name: string;
     link?: string;
@@ -57,13 +59,13 @@ export const papers: BibItem[] = [
                 and relations. It is relatively easy to formulate principles that entail that the
                 individuation of states of affairs, properties, and relations&mdash;in brief, intensional
                 entities&mdash;is coarse-grained enough to conform to this idea. It is less easy to devise a
-                complementary principle that imposes an <em className='pr-[0.12em]'>upper</em> bound on the
+                complementary principle that imposes an <Italic em>upper</Italic> bound on the
                 coarse-grainedness of intensional entities. A promising approach to this problem is to
-                formulate a principle according to which the <em className='pr-[0.12em]'>fundamental</em>{' '}
-                entities (including fundamental properties and relations) are freely recombinable or
-                &lsquo;logically independent&rsquo;; but certain special provisions that have to be made with
-                regard to relations tend to render such a principle unattractively complex. In this paper I
-                put forward a simpler principle, based on a broadly positionalistic conception of relations.
+                formulate a principle according to which the <Italic em>fundamental</Italic> entities
+                (including fundamental properties and relations) are freely recombinable or &lsquo;logically
+                independent&rsquo;; but certain special provisions that have to be made with regard to
+                relations tend to render such a principle unattractively complex. In this paper I put forward
+                a simpler principle, based on a broadly positionalistic conception of relations.
             </>
         ),
         link: 'https://link.springer.com/article/10.1007/s10670-025-01036-1',
@@ -89,24 +91,22 @@ export const papers: BibItem[] = [
         abstract: (
             <>
                 Higher-order logic, with its type-theoretic apparatus known as the{' '}
-                <em className='pr-[0.12em]'>simple theory of types</em> (STT), has increasingly come to be
-                employed in theorizing about properties, relations, and states of affairs&mdash;or
-                &lsquo;intensional entities&rsquo; for short. This paper argues against this employment of STT
-                and offers an alternative: <em className='pr-[0.12em]'>ordinal type theory</em> (OTT). Very
-                roughly, STT and OTT can be regarded as complementary simplifications of the &lsquo;ramified
-                theory of types&rsquo; outlined in the Introduction to{' '}
-                <em className='pr-[0.12em]'>Principia Mathematica</em> (on a realist reading). While STT,
-                understood as a theory of intensional entities, retains the Fregean division of properties and
-                relations into a multiplicity of categories according to their adicities and &lsquo;input
-                types&rsquo; and discards the division of intensional entities into different
-                &lsquo;orders&rsquo;, OTT takes the opposite approach: it{' '}
-                <em className='pr-[0.12em]'>retains</em> the hierarchy of orders (though with some
-                modifications) and <em className='pr-[0.12em]'>discards</em> the categorization of properties
-                and relations according to their adicities and input types. In contrast to STT, this latter
-                approach avoids intensional counterparts of the Epimenides and related paradoxes.{' '}
-                <em className='pr-[0.12em]'>Fundamental</em> intensional entities lie at the base of the
-                proposed hierarchy and are also given a prominent part to play in the individuation of
-                non-fundamental intensional entities.
+                <Italic em>simple theory of types</Italic> (STT), has increasingly come to be employed in
+                theorizing about properties, relations, and states of affairs&mdash;or &lsquo;intensional
+                entities&rsquo; for short. This paper argues against this employment of STT and offers an
+                alternative: <Italic em>ordinal type theory</Italic> (OTT). Very roughly, STT and OTT can be
+                regarded as complementary simplifications of the &lsquo;ramified theory of types&rsquo;
+                outlined in the Introduction to <Italic em>Principia Mathematica</Italic> (on a realist
+                reading). While STT, understood as a theory of intensional entities, retains the Fregean
+                division of properties and relations into a multiplicity of categories according to their
+                adicities and &lsquo;input types&rsquo; and discards the division of intensional entities into
+                different &lsquo;orders&rsquo;, OTT takes the opposite approach: it{' '}
+                <Italic em>retains</Italic> the hierarchy of orders (though with some modifications) and{' '}
+                <Italic em>discards</Italic> the categorization of properties and relations according to their
+                adicities and input types. In contrast to STT, this latter approach avoids intensional
+                counterparts of the Epimenides and related paradoxes. <Italic em>Fundamental</Italic>{' '}
+                intensional entities lie at the base of the proposed hierarchy and are also given a prominent
+                part to play in the individuation of non-fundamental intensional entities.
             </>
         ),
         link: 'https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2278031',
@@ -140,9 +140,8 @@ export const papers: BibItem[] = [
             <>
                 In this introductory essay, the metaphysics of relational states is discussed mainly from a
                 positionalistic perspective, beginning with a puzzle concerning the instantiations of converse
-                relations (such as <i className='pr-[0.12em]'>loving</i> and{' '}
-                <i className='pr-[0.12em]'>being loved by</i>). The closing section provides a brief overview
-                of the six contributions to this Special Issue.
+                relations (such as <Italic>loving</Italic> and <Italic>being loved by</Italic>). The closing
+                section provides a brief overview of the six contributions to this Special Issue.
             </>
         ),
         link: 'https://www.philosophie.ch/plate-2022',
@@ -155,10 +154,9 @@ export const papers: BibItem[] = [
         description: (
             <>
                 Distinguishes two concepts of qualitativeness (or &lsquo;purity&rsquo;):{' '}
-                <em className='pr-[0.12em]'>pure</em> qualitativeness (roughly{' '}
-                <i className='pr-[0.12em]'>à la</i> Carnap) and <em className='pr-[0.12em]'>strict</em>{' '}
-                qualitativeness (roughly <i className='pr-[0.12em]'>à la</i> Carmichael). The penultimate
-                section revisits Quine&rsquo;s &lsquo;Grades of Discriminability&rsquo;.
+                <Italic em>pure</Italic> qualitativeness (roughly <Italic>à la</Italic> Carnap) and{' '}
+                <Italic em>strict</Italic> qualitativeness (roughly <Italic>à la</Italic> Carmichael). The
+                penultimate section revisits Quine&rsquo;s &lsquo;Grades of Discriminability&rsquo;.
             </>
         ),
         details: (
@@ -170,17 +168,16 @@ export const papers: BibItem[] = [
             <>
                 This paper is concerned with two concepts of qualitativeness that apply to intensional
                 entities (i.e., properties, relations, and states of affairs). I propose an account of{' '}
-                <em className='pr-[0.12em]'>pure</em> qualitativeness that largely follows the traditional
-                understanding established by Carnap, and try to shed light on its ontological presuppositions.
-                On this account, an intensional entity is purely qualitative iff it does not
-                &lsquo;involve&rsquo; any particular (i.e., anything that is not an intensional entity). An
-                alternative notion of qualitativeness&mdash;which I propose to refer to as a concept of{' '}
-                <em className='pr-[0.12em]'>strict</em> qualitativeness&mdash;has recently been introduced by
-                Chad Carmichael. However, Carmichael&rsquo;s definition presupposes a highly fine-grained
-                conception of properties and relations. To eliminate this presupposition, I tentatively
-                suggest a different definition that rests on a concept of{' '}
-                <em className='pr-[0.12em]'>perspicuous denotation</em>. In the penultimate section, both
-                concepts of qualitativeness are put to work in distinguishing between different
+                <Italic em>pure</Italic> qualitativeness that largely follows the traditional understanding
+                established by Carnap, and try to shed light on its ontological presuppositions. On this
+                account, an intensional entity is purely qualitative iff it does not &lsquo;involve&rsquo; any
+                particular (i.e., anything that is not an intensional entity). An alternative notion of
+                qualitativeness&mdash;which I propose to refer to as a concept of <Italic em>strict</Italic>{' '}
+                qualitativeness&mdash;has recently been introduced by Chad Carmichael. However,
+                Carmichael&rsquo;s definition presupposes a highly fine-grained conception of properties and
+                relations. To eliminate this presupposition, I tentatively suggest a different definition that
+                rests on a concept of <Italic em>perspicuous denotation</Italic>. In the penultimate section,
+                both concepts of qualitativeness are put to work in distinguishing between different
                 &lsquo;grades&rsquo; of qualitative discriminability.
             </>
         ),
@@ -237,15 +234,15 @@ export const papers: BibItem[] = [
         abstract: (
             <>
                 This paper presents an account of what it is for a property or relation (or
-                &lsquo;attribute&rsquo; for short) to be <em className='pr-[0.12em]'>logically simple</em>.
-                Based on this account, it is shown, among other things, that the logically simple attributes
-                are in at least one important way sparse. This in turn lends support to the view that the
-                concept of a logically simple attribute can be regarded as a promising substitute for
-                Lewis&rsquo;s concept of a perfectly natural attribute. At least in part, the advantage of
-                using the former concept lies in the fact that it is amenable to analysis, where that
-                analysis&mdash;<i className='pr-[0.12em]'>i.e.</i>, the account proposed in this
-                paper&mdash;requires the adoption neither of an Armstrongian theory of universals nor of a
-                primitive notion of naturalness, fundamentality, or grounding.
+                &lsquo;attribute&rsquo; for short) to be <Italic em>logically simple</Italic>. Based on this
+                account, it is shown, among other things, that the logically simple attributes are in at least
+                one important way sparse. This in turn lends support to the view that the concept of a
+                logically simple attribute can be regarded as a promising substitute for Lewis&rsquo;s concept
+                of a perfectly natural attribute. At least in part, the advantage of using the former concept
+                lies in the fact that it is amenable to analysis, where that analysis&mdash;
+                <Italic>i.e.</Italic>, the account proposed in this paper&mdash;requires the adoption neither
+                of an Armstrongian theory of universals nor of a primitive notion of naturalness,
+                fundamentality, or grounding.
             </>
         ),
         link: 'https://quod.lib.umich.edu/p/phimp/3521354.0016.001/--logically-simple-properties-and-relations?view=image',

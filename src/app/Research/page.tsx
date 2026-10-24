@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Content from '../components/Content';
 import Section from '../components/Section';
+import Italic from '../components/Italic';
 
 export const metadata: Metadata = {
     title: 'Research',
@@ -180,14 +181,14 @@ export default function Page() {
                     <Diagram />
                 </div>
                 <p>
-                    In case you&rsquo;d like a more <i className='pr-[0.12em]'>interactive</i> approach to my
-                    published work in metaphysics, here is a &lsquo;shared artifact&rsquo; that I made with{' '}
+                    In case you&rsquo;d like a more <Italic>interactive</Italic> approach to my published work
+                    in metaphysics, here is a &lsquo;shared artifact&rsquo; that I made with{' '}
                     <a
                         href='https://www.anthropic.com/news/claude-fable-5-mythos-5'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        <i className='pr-[0.12em]'>Claude Fable 5</i>
+                        <Italic>Claude Fable 5</Italic>
                     </a>{' '}
                     (and subsequently modified) in June 2026:
                 </p>
@@ -214,7 +215,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Towards an Ontology of Roles and States&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Erkenntnis</i> (forthcoming; published online 2026)
+                                <Italic>Erkenntnis</Italic> (forthcoming; published online 2026)
                             </td>
                         </tr>
                         <tr>
@@ -222,8 +223,7 @@ export default function Page() {
                                 <OTT />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Ordinal Type Theory&rsquo;, <i className='pr-[0.12em]'>Inquiry</i>{' '}
-                                (2025)
+                                &lsquo;Ordinal Type Theory&rsquo;, <Italic>Inquiry</Italic> (2025)
                             </td>
                         </tr>
                         <tr>
@@ -232,8 +232,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;<i>Quo Vadis</i>, Metaphysics of Relations?&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Dialectica</i> (2022; introduction to a special
-                                issue)
+                                <Italic>Dialectica</Italic> (2022; introduction to a special issue)
                             </td>
                         </tr>
                         <tr>
@@ -242,7 +241,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Qualitative Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Philosophical Studies</i> (2022)
+                                <Italic>Philosophical Studies</Italic> (2022)
                             </td>
                         </tr>
                         <tr>
@@ -250,8 +249,8 @@ export default function Page() {
                                 <IPR />
                             </td>
                             <td className='py-1'>
-                                &lsquo;Intrinsic Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Inquiry</i> (2018)
+                                &lsquo;Intrinsic Properties and Relations&rsquo;, <Italic>Inquiry</Italic>{' '}
+                                (2018)
                             </td>
                         </tr>
                         <tr>
@@ -260,7 +259,7 @@ export default function Page() {
                             </td>
                             <td className='py-1'>
                                 &lsquo;Logically Simple Properties and Relations&rsquo;,{' '}
-                                <i className='pr-[0.12em]'>Philosophers&rsquo; Imprint</i> (2016)
+                                <Italic>Philosophers&rsquo; Imprint</Italic> (2016)
                             </td>
                         </tr>
                     </tbody>
@@ -283,9 +282,9 @@ export default function Page() {
                 <p>
                     <LSPR /> presents a framework similar to the one used in that thesis, and the main idea
                     behind its analysis of the concept of a{' '}
-                    <i className='pr-[0.12em]'>logically simple property or relation</i> is also already
-                    present there. <IPR /> applies the same basic idea to the problem of analyzing the concept
-                    of <i>intrinsicality</i>, and uses essentially the same framework. However, it runs into
+                    <Italic>logically simple property or relation</Italic> is also already present there.{' '}
+                    <IPR /> applies the same basic idea to the problem of analyzing the concept of{' '}
+                    <i>intrinsicality</i>, and uses essentially the same framework. However, it runs into
                     certain problems (see in particular §6.3 of that paper), which already point in the
                     direction of an approach that employs a &lsquo;genuinely metaphysical&rsquo; notion (and
                     not just &lsquo;broadly logical&rsquo; notions in addition to a concept of parthood).
@@ -293,17 +292,16 @@ export default function Page() {
                 <p>
                     In <QPR />, the &lsquo;broadly logical&rsquo; approach has finally been abandoned. This
                     paper already cites <OTT /> (despite having been published a few years earlier), in which
-                    the concept of <i className='pr-[0.12em]'>fundamentality</i> is taken as primitive, and
-                    which develops with the help of this concept a full account of how intensional entities
-                    are individuated. <TORS />
+                    the concept of <Italic>fundamentality</Italic> is taken as primitive, and which develops
+                    with the help of this concept a full account of how intensional entities are individuated.{' '}
+                    <TORS />
                     , in turn, is based on <OTT /> and to a lesser degree on <QVMR />. What makes <QVMR />{' '}
                     relevant for <TORS /> is mainly the fact that the former provides some historical
                     background for&mdash;as well as a defense of&mdash;an at least broadly{' '}
-                    <i className='pr-[0.12em]'>positionalistic</i> approach to the metaphysics of relational
-                    states. However, the approach defended in <QVMR /> is based on a triadic concept of
-                    &lsquo;occupation&rsquo; (as in, &lsquo;<i className='pr-[0.12em]'>X</i> occupies the
-                    position <i className='pr-[0.12em]'>P</i> in the state of affairs{' '}
-                    <i className='pr-[0.16em]'>S</i>
+                    <Italic>positionalistic</Italic> approach to the metaphysics of relational states.
+                    However, the approach defended in <QVMR /> is based on a triadic concept of
+                    &lsquo;occupation&rsquo; (as in, &lsquo;<Italic>X</Italic> occupies the position{' '}
+                    <Italic>P</Italic> in the state of affairs <Italic ic={0.16}>S</Italic>
                     &rsquo;), whereas the approach of <TORS /> is based on a dyadic concept of
                     &lsquo;resultance&rsquo;, which links states of affairs to &lsquo;role assignments&rsquo;,
                     i.e., generalized multisets of role&ndash;entity pairs.
